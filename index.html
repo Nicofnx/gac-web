@@ -17,44 +17,50 @@
     <div class="container">
         <!-- HEADER -->
         <header class="header">
-            <h1 class="header__title">Grupo Aldo Cleaning SRL | Limpieza y salud en un solo proveedor</h1>
-            <nav class="nav">
-                <ul class="nav__ul">
-                    <li>
-                        <a class="nav__ul__link" href="/index.html">HOME</a>
-                    </li>
-                    <li>
-                        <a class="nav__ul__link" href="/pages/nosotros.html">Nosotros</a>
-                    </li>
-                    <li>
-                        <a class="nav__ul__link" href="/pages/rrhh.html">RRHH</a>
-                        <ul class="nav__sub-nav">
-                            <li class="nav__sub-nav--li">
-                                <a href="#">Políticas</a>
-                            </li>
-                            <li class="nav__sub-nav--li">
-                                <a href="#">Envia tu CV</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="nav__ul__link" href="/pages/contacto.html">Contacto</a>
-                    </li>
-                    <li>
-                        <a class="nav__ul__link" href="/pages/nuestros-servicios.html">Nuestros servicios</a>
-                    </li>
-                    <li>
-                        <a class="nav__ul__link" href="/pages/naturaleza.html">Naturaleza</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="header__container">
+                <img  src="./assetts/logos/logo-empresa-reducido-bk.png" alt="logo-GAC">
+                <nav class="nav">
+                    <ul class="nav__ul">
+                        <li>
+                            <a class="nav__ul__link" href="/index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a class="nav__ul__link" href="/pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li>
+                            <a class="nav__ul__link" href="/pages/rrhh.html">RRHH</a>
+                            <ul class="nav__sub-nav">
+                                <li class="nav__sub-nav--li">
+                                    <a href="#">Políticas</a>
+                                </li>
+                                <li class="nav__sub-nav--li">
+                                    <a href="#">Envia tu CV</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nav__ul__link" href="/pages/contacto.html">Contacto</a>
+                        </li>
+                        <li>
+                            <a class="nav__ul__link" href="/pages/nuestros-servicios.html">Nuestros servicios</a>
+                        </li>
+                        <li>
+                            <a class="nav__ul__link" href="/pages/naturaleza.html">Naturaleza</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- <h1 class="header__title">Grupo Aldo Cleaning SRL | Limpieza y salud en un solo proveedor</h1> -->
+            
         </header>
         <!-- ----- -->
         <!-- SECTION 1 -->
         <section class="secction-1">
             <div class="section-1__container">                
-                <div class="section-1__container__img"></div> <!-- Div para colocar el background -->
+                <!--<div class="section-1__container__img"></div> --><!-- Div para colocar el background -->
+                <img id="img_back" src="./assetts/Imagenes/background-home2.jpg" alt="">
                 <div class="section-1__container__text">
+                    <img id="img_logo_empresa" src="./assetts/logos/logo-empresa.png" alt="">
                     <h2>Servicios integrales de limpieza y mantenimiento edilicio</h2>
                     <div class="section-1__container__text--background">
                         <p>Brindamos soluciones a nuestros clientes. Lo hacemos de forma personalizada,
@@ -63,16 +69,14 @@
                 </div> 
             </div>
         </section>
-        <!-- SECTION 1 -->
         <!-- ------ -->
+        <!-- SECTION 2 -->        
         <section class="secction-2">
-            <div class="secction-2__container">
-                <img src="./assetts/logos/logo-empresa.png" alt="Logo empresarial">
-                <p>Bienvenidos a Grupo Aldo Cleaning S.R.L. Empresa de limpieza Argentina, que desde el 2001 se ha encargado de higienizar y limpiar empresas, oficinas, plantas industriales, hospitales y clínicas en Argentina.
-                    Contamos con una impecable trayectoria y hemos trabajado con importantes empresas y organismos del país, cubriendo proyectos de sanitización y limpieza de todo tipo Contamos con la mejor maquinaria y equipos para responder con eficiencia cualquier requerimiento de limpieza, sanitización, higiene y mantenimiento regular, así como un equipo de trabajo entrenado.</p>
-            </div>
+            <div class="secction-2__info"></div>
+            <div class="secction-2__info"></div>
+            <div class="secction-2__info"></div>
         </section>
-        <!-- ------ -->
+        
         <!-- FOOTER-->
         <footer class="footer">
             <div class="footer__text">
@@ -84,8 +88,10 @@
             </div>
             <div class="footer__text">
                 <img class="logo" src="./assetts/logos/icon-wz.png" alt="WhatsApp">
-                <span>2323-327022 /</span><br>
-                <span>/ 2323-526185</span>
+                <div class="footer__text--phone">
+                    <span>2323-327022</span><br>
+                    <span>2323-526185</span>
+                </div>   
             </div>
             <div class="footer__text">
                 <img class="logo logo_mail" src="./assetts/logos/icon-mail.png" alt="Email">

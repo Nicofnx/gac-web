@@ -53,24 +53,34 @@ table {
     margin: 0 auto;
     
     
+    
 }
 
 /*HEADER*/
 
 .header{
-    width: 100%;
+    width: 100%;    
     background: rgba(247, 235, 223, 0.3); 
     backdrop-filter: blur(8px);
-    position: sticky;
-    top: 0;
+    position: sticky;   
+    top: 0; 
     border: 1px solid rgba(255, 255, 255, 0.3);
     z-index: 100;
-      
-   
-    
     
     
 }
+
+.header__container{
+    display: flex;
+    align-items: center;
+    
+}  
+
+.header__container img{
+    width: 125px;
+    display: inline;
+    margin: 10px 0px 10px 35px;
+}  
 
 .header__title{    
     width: 100%;
@@ -91,43 +101,64 @@ table {
 
 nav{
     width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
 }
 
 .nav__ul {
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    padding-bottom: 10px;
+    justify-content: flex-end;
+    align-items: flex-end ;    
+    height: 120px;
+    
+    
     
 }
 
 .nav > li {
     position: relative;
     display: inline-block;
+    
+    
+    
 }
 
 .nav__ul__link{
-    
-    font-family: 'Open Sans', sans-serif;
-    width: 175px;
+    padding: 5px 15px;
+    font-family: 'Open Sans', sans-serif;    
     line-height: 40px;
     height: 40px;
     color: #141B30;
     cursor: pointer;    
     font-style: normal;
-    font-weight: 500;
     font-size: 20px;
+    
     text-align: center; 
     list-style: none;
     text-decoration: none;
     transition: color .3s;
+    margin: .5em;    
     
     
+    
+}
+
+.nav__ul__link::after{
+    content: "";
+    position: absolute;
+    height: 35px;    
+    border-right: 1px solid rgba(247, 235, 223); 
+    margin-left: 25px;
 }
 
 .nav__ul__link:hover{
     color: #fff;
 }
+
+
 
 /*****************************/
 
@@ -136,8 +167,8 @@ nav{
 .nav__sub-nav{
     cursor: pointer;
     position: absolute;
-    
     display: none;
+    
 }
 
 .nav__sub-nav--li{
@@ -145,6 +176,8 @@ nav{
     top: 11px;
     backdrop-filter: blur(8px);
     margin: 2px 0 2px 0;
+    
+    
     
 }
 
@@ -162,6 +195,7 @@ nav{
     background: rgba(247, 235, 223, 0.3);
     width: 100%;
     border: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 20px;
     
     
 }
@@ -170,10 +204,13 @@ nav{
 
 .nav__sub-nav--li:hover a{
     color: #fff;
+    
 }
 
 .nav__ul li:hover .nav__sub-nav{
     display: block;
+    
+    
     
 }
 
