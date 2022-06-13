@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Remix icons para el boton -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <title>GAC SRL</title>
 </head>
 <body>
@@ -18,8 +20,10 @@
         <!-- HEADER -->
         <header class="header">
             <div class="header__container">
-                <img  src="../assetts/logos/logo-empresa-reducido-bk.png" alt="logo-GAC">
-                <nav class="nav">
+                <div class="header__container__img">
+                    <img  src="../assetts/logos/logo-gota-color.png" alt="logo-GAC">
+                </div>
+                <nav class="my_nav">
                     <ul class="nav__ul">
                         <li>
                             <a class="nav__ul__link" href="/index.html">HOME</a>
@@ -50,45 +54,65 @@
                     </ul>
                 </nav>
             </div>
-            <!-- <h1 class="header__title">Grupo Aldo Cleaning SRL | Limpieza y salud en un solo proveedor</h1> -->
-            
         </header>
+
         <section class="secction-1">
             <div id="form__background">
                 <img id="img_form" src="../assetts/Imagenes/logo-empresa.png" alt="logo empresa gac">
-                <form class="secction-1__form" action="" method="GET" enctype="multipart/form-data">
-                    <h1>Comunicate con nosotros</h1>
-                    <h2>No dude en contratar los servicios profesionales de limpieza de Grupo Aldo Cleaning SRL y así asegurarse de obtener un servicio profesional con amplia experiencia en el mercado.</h2>
-                    <fieldset>
-                        <legend>Datos del contacto</legend>
-                        <label for="empresa">Empresa</label>
-                        <input type="text" name="empresa">
-                        <br>
-                        <label for="apellido">Nombre y apellido:</label>
-                        <input type="text" name="apellido" required>
-                    </fieldset>
-                        <br>
-                    <fieldset>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" required>
-                        <br>
-                        <label for="telefono">Telefono | Celular | WhatsApp</label>
-                        <input type="number" name="telefono">
-                    </fieldset>
-                        <br>
-                    <fieldset>
-                        <label for="comentario">Tu mensaje</label>
-                        <textarea name="comentario" id="" cols="30" rows="10" placeholder="Escribinos aquí..."></textarea>
-                        <br>
+                <div class="container__form">
+                    <div class="title_form">
+                        <h1>Comunicate con nosotros</h1>
+                        <h2>No dude en contratar los servicios profesionales de limpieza de Grupo Aldo Cleaning SRL y así asegurarse de obtener un servicio profesional con amplia experiencia en el mercado.</h2>
+                    </div>                
+                    <form class="form__container" action="" method="GET" enctype="multipart/form-data">
+                        
+                        <fieldset class="fieldset_container">
+                            <div>                            
+                                <label for="empresa">Empresa<span class="requiered">*</span></label>
+                                <input type="text" name="empresa">
+                            </div>
+                            <div>
+                                <label for="apellido">Nombre y apellido<span class="requiered">*</span></label>
+                                <input type="text" name="apellido" required>
+                            </div>                        
+                        </fieldset>
+                        <fieldset class="fieldset_container">
+                            <div>
+                                <label for="email">Email<span class="requiered">*</span></label>
+                                <input type="email" name="email" required>
+                            </div>                        
+                            <div>
+                                <label for="telefono">Telefono | WhatsApp<span class="requiered">*</span></label>
+                                <input type="number" name="telefono">
+                            </div>                        
+                        </fieldset>
+                        <fieldset class="fieldset_container">
+                            <div>
+                                <label for="comentario">Tu mensaje<span class="requiered">*</span></label>
+                                <textarea name="comentario" id="" cols="30" rows="10" placeholder="Escribinos aquí..."></textarea>
+                            </div>
+                            <div>
+                                <label for="antispam">Tildar sistema anti SPAM<span class="requiered">*</span></label>
+                                <div class="check_container">                                                                    
+                                    <input id="checkbox" type="checkbox" name="antispam" required> 
+                                    <span>No soy un robot</span>
+                                    <div id="img_check_container">                                        
+                                        <img id="img_check" src="../assetts/logos/captcha.png" alt="captcha">
+                                    </div>
+                                </div>                                          
+                            </div>                                                       
+                        </fieldset>
                         <div>
-                            <label for="antispam">Tildar sistema anti SPAM</label>
-                            <input type="checkbox" name="antispam" required>
-                        </div>
-                        <input type="submit">
-                    </fieldset>
-                </form>
-            </div>            
-        </section>      
+                            <button class="button">
+                                <span class="text-btn">Enviar</span>
+                                <i class="ri-check-line icon"></i>
+                            </button>
+                        </div> 
+                    </form>
+                </div>  
+            </div>
+        </section>   
+
         <!-- FOOTER-->
         <footer class="footer">
             <div class="footer__text">

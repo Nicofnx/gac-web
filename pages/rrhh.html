@@ -14,12 +14,14 @@
     <title>GAC SRL</title>
 </head>
 <body>
-    <div class="container">
+    <div class="web_container">
         <!-- HEADER -->
         <header class="header">
             <div class="header__container">
-                <img  src="../assetts/logos/logo-empresa-reducido-bk.png" alt="logo-GAC">
-                <nav class="nav">
+                <div class="header__container__img">
+                    <img  src="../assetts/logos/logo-gota-color.png" alt="logo-GAC">
+                </div>
+                <nav class="my_nav">
                     <ul class="nav__ul">
                         <li>
                             <a class="nav__ul__link" href="/index.html">HOME</a>
@@ -50,12 +52,60 @@
                     </ul>
                 </nav>
             </div>
-            <!-- <h1 class="header__title">Grupo Aldo Cleaning SRL | Limpieza y salud en un solo proveedor</h1> -->
-            
         </header>
-        <section class="secction-1">
-            <h1>PROXIMAMENTE INFORMACION SOBRE RECURSOS HUMANOS E INCORPORACION DE PERSONAL ADMINSITRATIVO U OPERATIVO</h1>
+
+        <section class="secction-1">            
+            <div class="rrhh-container"> 
+                <div class="rrhh-container__text">
+                    <h1>¡Unite a nuestro equipo!</h1>
+                    <p>Gracias por interesarte en Grupo Aldo Cleaning SRL, ser parte de nuestro equipo es una oportunidad especial. Junto a nosotros vas a poder desarrollarte profesionalmente. Brindamos a nuestros empleados estabilidad y confianza al trabajar para una empresa líder en el sector.</p>
+                </div>        
+                <div class="form__container">
+                    <form action="">
+                        <label for="correo">Correo<span class="requiered">*</span></label>
+                        <input type="email" name="correo" required placeholder="Ingresa aqui tu direccion de mail">
+    
+                        <label for="nombre">Nombre y Apellido<span class="requiered">*</span></label>
+                        <input type="text" name="nombre" required placeholder="Tu respuesta aqui">
+    
+                        <label for="nacimiento">Fecha de nacimineto<span class="requiered">*</span></label>
+                        <input type="date" name="nacimiento" required >
+    
+                        <label for="celular">Celular<span class="requiered">*</span></label>
+                        <input type="numbre" name="celular" required placeholder="Código de area sin 0 y sin el 15">
+    
+                        <label for="provincia">Provincia<span class="requiered">*</span></label>
+                        <input type="text" name="provincia" required placeholder="Tu respuesta aqui">
+    
+                        <label for="localidad">Localidad y direccion (calle y altura)<span class="requiered">*</span></label>
+                        <input type="text" name="localidad" required placeholder="Tu respuesta aqui">
+    
+                        <label for="experiencia">Contanos si tenes experiencia en el rubro<span class="requiered">*</span></label>
+                        <input type="text" name="experiencia" required placeholder="Tu respuesta aqui">
+    
+                        <label for="empresas" required>Nombra las empresas donde trabajaste en limpieza y mantenimiento<span class="requiered">*</span></label>
+                        <input type="text" name="empresas" placeholder="Tu respuesta aqui">
+    
+                        <label for="maquinas">Tenes experiencia en el uso de maquinaria de limpieza? cuales?</label>
+                        <input type="text" name="maquinas" placeholder="Tu respuesta aqui">
+    
+                        <label for="coducir">Tenes carnet de conducir? </label>
+                        <input type="text" name="coducir" placeholder="Tu respuesta aqui">
+    
+                        <label for="horas_extras">Tenes disponibilidad para realizar turnos rotativos y horas extras?</label>
+                        <input type="text" name="horas_extras" placeholder="Tu respuesta aqui">
+    
+                        <div class="area_cv">
+                            <p>Adjuntanos tu CV, si no lo tenes presiona enviar sin añadirlo.</p>
+                            <button>Añadir archivo</button>
+                        </div>    
+                        <button id="btn_submit" type="submit">ENVIAR FORMULARIO</button>
+                    </form>
+                </div>
+            </div>
         </section>
+
+
         <!-- FOOTER-->
         <footer class="footer">
             <div class="footer__text">

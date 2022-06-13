@@ -45,13 +45,18 @@ table {
 }
 /******************************/
 
+/*VARIABLES*/
+:root{
+    --text-color-blue: #141B30;
+}
+
 body{
     font-family: 'Inter'
     /*background: rgba(247, 235, 223, 0.5);*/
     
 }
 
-.container{
+.container-web{
     display: flex;
     flex-direction: column;
     
@@ -70,10 +75,16 @@ body{
 /*SECTION 1*/
 
 .section-1__container{
+    width: 100%;
+    position: relative;
+    padding-top: 100px;
     
-    padding-top: 120px;
     
     
+}
+
+.section-1__container h3{
+    text-align: center;                                      
 }
 
 .section-1__container__text{
@@ -88,56 +99,33 @@ body{
     
 }
 
-.section-1__container__text h2{
+#main_text{
+    margin-top: 320px;
+    
+    text-align: center;
     font-family: 'Open Sans', sans-serif;    
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 34px;
     line-height: 48px;
-    color: #141B30;
+    color: var(--text-color-blue)
 }
 
 
-.section-1__container__text--background{
-       
-    font-style: normal;
-    font-weight: 400;    
-    line-height: 24px;
-    color: #121828;
-    width: 100%;
-    padding: 15px 100px 15px 100px;
-    font-size: 20px;    
-    background: rgba(247, 235, 223, 0.5);
-    backdrop-filter: blur(4px);
-    
-}
 
 #img_back{
-    width: 90%;
+    width: 100%;
     height: 1000px;
     position: absolute;
     top: -200px;
-    border-radius: 0 0px 25px 25px;
+    
     filter: blur(0px);
     z-index: -1;
-    opacity: .8;
+    opacity: .83;
     object-fit:cover;
 }
 
-/* .section-1__container__img{
-    position: absolute;
-    background-image: url(/assetts/Imagenes/background-home2.jpg);
-    background-repeat: no-repeat;
-    /*background-attachment: fixed;*/
-    /* background-position: top;
-    background-size: cover;
-    z-index: -1;
-    height: 1200px;
-    top: -161px;
-    width: 90%;     */
-    /*border-radius: 0% 100% 0% 100% / 68% 0% 100% 32%;*/
-    
-/* } */ 
+
 
 #img_logo_empresa{
     width: 350px;
@@ -152,22 +140,68 @@ body{
 /*SECTION 2*/
 .secction-2{
     width: 100%;
-    margin-top: 200px;
-    margin-bottom: 100px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 300px;
-    column-gap: 5%;
+    margin-top: 50px;  
+    margin-bottom: 100px; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
 }
 
-.secction-2__info{
-    
-    
-    border: 1px solid #000;
-    border-radius: 20px;
+.card{
+    position: relative;
+    width: 25rem;
+    height: 25rem;
 }
+
+.card::after{
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #eacda3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #866c4a, #e4c497);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #866c4a, #e4c497); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    filter: blur(10px);
+    z-index: -1;
+}
+
+
+.card-img-top{
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    
+}
+
+.card-img-top:nth-child(2){
+    border-radius: 0px 0px 5px 5px;
+}
+
+.btn-my-card{
+    background: linear-gradient( #e4c497, #866c4a);
+    text-decoration: none;
+    padding: 5px 7px 5px 7px;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    transition: all .5s;
+}
+
+.btn-my-card:hover{
+    color: var(--text-color-blue);
+    font-weight: bold;
+    transform: scale(2);
+    
+}
+
+
 
 /*****************************/
+
+
 
 
 

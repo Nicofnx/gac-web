@@ -45,16 +45,12 @@ table {
 }
 /******************************/
 
-
-.container{
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin: 0 auto;
-    
-    
-    
+/*VARIABLES*/
+:root{
+    --text-color-blue: #141B30;
 }
+
+/******************************/
 
 /*HEADER*/
 
@@ -73,33 +69,26 @@ table {
 .header__container{
     display: flex;
     align-items: center;
-    
-}  
-
-.header__container img{
-    width: 125px;
-    display: inline;
-    margin: 10px 0px 10px 35px;
-}  
-
-.header__title{    
     width: 100%;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;     
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 39px;    
-    letter-spacing: 0.1em;
-    color: #141B30;
-    padding: 41px 0 41px 0;
     
+}  
+
+.header__container__img{
+    width: 70px;
+    margin: 0px 1.2rem 0 1.2rem;
 }
+
+.header__container__img img{
+    width: 100%;    
+    opacity: .5;
+}  
+
+
 /*****************************/
 
 /*MENU*/
 
-nav{
+.my_nav{
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -110,15 +99,17 @@ nav{
 .nav__ul {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     align-items: flex-end ;    
     height: 120px;
+    margin-bottom: 0;
     
     
     
 }
 
-.nav > li {
+.my_nav > li {
     position: relative;
     display: inline-block;
     
@@ -131,11 +122,10 @@ nav{
     font-family: 'Open Sans', sans-serif;    
     line-height: 40px;
     height: 40px;
-    color: #141B30;
+    color: var(--text-color-blue);
     cursor: pointer;    
     font-style: normal;
-    font-size: 20px;
-    
+    font-size: 18px;    
     text-align: center; 
     list-style: none;
     text-decoration: none;
@@ -151,7 +141,7 @@ nav{
     position: absolute;
     height: 35px;    
     border-right: 1px solid rgba(247, 235, 223); 
-    margin-left: 25px;
+    margin-left: 22px;
 }
 
 .nav__ul__link:hover{
@@ -173,9 +163,9 @@ nav{
 
 .nav__sub-nav--li{
     position: relative;
-    top: 11px;
+    top: 3px;
     backdrop-filter: blur(8px);
-    margin: 2px 0 2px 0;
+    margin: 2px 0 3px 0;
     
     
     
@@ -185,7 +175,7 @@ nav{
     font-family: 'Open Sans', sans-serif;
     display: block;
     text-decoration: none;
-    color: #141B30;
+    color: var(--text-color-blue);
     width: 175px;
     line-height: 40px;
     height: 40px;
