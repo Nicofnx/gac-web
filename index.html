@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="./assetts/logos/favicon.png" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/style-header.css" rel="stylesheet" type="text/css">
-    <link href="./css/style-home.css" rel="stylesheet" type="text/css">
-    <link href="./css/style-footer.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link href="./css/style.css" rel="stylesheet" type="text/css">    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -20,7 +18,9 @@
         <header class="header">
             <div class="header__container">
                 <div class="header__container__img">
-                    <img  src="./assetts/logos/logo-gota-color.png" alt="logo-GAC">
+                    <a href="/index.html">
+                        <img  src="./assetts/logos/logo-gota-color.png" alt="logo-GAC">
+                    </a>
                 </div>                
                 <nav class="my_nav">
                     <ul class="nav__ul">
@@ -31,14 +31,14 @@
                             <a class="nav__ul__link" href="/pages/nosotros.html">Nosotros</a>
                         </li>
                         <li>
-                            <a class="nav__ul__link" href="/pages/rrhh.html">RRHH</a>
+                            <span class="nav__ul__link no_cursor">RRHH</span>
                             <!-- SubMenu -->
                             <ul class="nav__sub-nav">
                                 <li class="nav__sub-nav--li">
-                                    <a href="#">Políticas</a>
+                                    <a href="/pages/rrhh-politicas.html">Políticas</a>
                                 </li>
                                 <li class="nav__sub-nav--li">
-                                    <a href="#">Envia tu CV</a>
+                                    <a href="/pages/rrhh.html">Envia tu CV</a>
                                 </li>
                             </ul>
                             <!-- -- -->
@@ -105,6 +105,18 @@
         
         <!-- FOOTER-->
         <footer class="footer">
+            <div class="redes_container_mobile">
+                <div class="footer__text">
+                    <a href="https://m.facebook.com/Grupo-Aldo-Cleaning-SRL-103333041358407/" target="_blank">
+                        <img class="logo" src="./assetts/logos/icon-fb.png" alt="Facebook">
+                    </a>
+                </div>
+                <div class="footer__text">
+                    <a href="https://www.instagram.com/grupoaldocleaning/" target="_blank">
+                        <img class="logo" src="./assetts/logos/icon-insta.png" alt="Instagram">
+                    </a>
+                </div>
+            </div>
             <div class="footer__text">
                 <span>© 2018 Grupo Aldo Cleaning SRL</span>
             </div>
@@ -123,16 +135,19 @@
                 <img class="logo logo_mail" src="./assetts/logos/icon-mail.png" alt="Email">
                 <span>aldocleaningsrl@hotmail.com</span>
             </div>
-            <div class="footer__text">
-                <a href="https://m.facebook.com/Grupo-Aldo-Cleaning-SRL-103333041358407/" target="_blank">
-                    <img class="logo" src="./assetts/logos/icon-fb.png" alt="Facebook">
-                </a>
+            <div class="redes_container_desktop">
+                <div class="footer__text">
+                    <a href="https://m.facebook.com/Grupo-Aldo-Cleaning-SRL-103333041358407/" target="_blank">
+                        <img class="logo" src="./assetts/logos/icon-fb.png" alt="Facebook">
+                    </a>
+                </div>
+                <div class="footer__text">
+                    <a href="https://www.instagram.com/grupoaldocleaning/" target="_blank">
+                        <img class="logo" src="./assetts/logos/icon-insta.png" alt="Instagram">
+                    </a>
+                </div>
             </div>
-            <div class="footer__text">
-                <a href="https://www.instagram.com/grupoaldocleaning/" target="_blank">
-                    <img class="logo" src="./assetts/logos/icon-insta.png" alt="Instagram">
-                </a>
-            </div>
+            
         </footer>
         <!-- ------ -->
     </div>
