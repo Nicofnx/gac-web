@@ -782,7 +782,7 @@ textarea:focus {
 }
 
 .rrhh-container{	
-	background-image: url(/assetts/Imagenes/rrhh_img.jpg);
+	background-image: url("../assetts/Imagenes/rrhh_img.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -1152,7 +1152,7 @@ width: 25px;
 
 
 #img_colum1{
-    background-image: url("/assetts/Imagenes/naturaleza2.jpg");
+    background-image: url("../assetts/Imagenes/naturaleza2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1165,7 +1165,7 @@ width: 25px;
 }
 
 #img_colum2{
-    background-image: url("/assetts/Imagenes/naturaleza1.jpg");
+    background-image: url("../assetts/Imagenes/naturaleza1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
