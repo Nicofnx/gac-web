@@ -19,44 +19,68 @@
         <header class="header">
             <div class="header__container">
                 <div class="header__container__img">
-                    <a href="/index.html">
+                    <a href="../index.html">
                         <img  src="../assetts/logos/logo-gota-color.png" alt="logo-GAC">
                     </a>
                 </div>
+                <!--MENU HAMBURGER-->
+                <div class="nav_burger">
+                    <nav role="navigation">
+                        <div id="menuToggle">
+                          
+                          <input type="checkbox" />
+                          <span></span>
+                          <span></span>
+                          <span></span>                          
+                          <ul id="menu">
+                            <a href="../index.html"><li>Home</li></a>
+                            <a href="nosotros.html"><li>Nosotros</li></a>                            
+                            <a href="contacto.html"><li>Contacto</li></a>
+                            <a href="rrhh-politicas.html"><li>Politicas</li></a>
+                            <a href="rrhh.html"><li>Envia tu CV</li></a>
+                            <a href="nuestros-servicios.html"><li>Nuestros servicios</li></a>
+                            <a href="naturaleza.html"><li>Naturaleza</li></a>
+                          </ul>
+                        </div>
+                      </nav>
+                </div>   
+                <!---------------->
                 <nav class="my_nav">
                     <ul class="nav__ul">
                         <li>
-                            <a class="nav__ul__link" href="/index.html">HOME</a>
+                            <a class="nav__ul__link" href="../index.html">HOME</a>
                         </li>
                         <li>
-                            <a class="nav__ul__link" href="/pages/nosotros.html">Nosotros</a>
+                            <a class="nav__ul__link" href="nosotros.html">Nosotros</a>
                         </li>
                         <li>
                             <span class="nav__ul__link no_cursor">RRHH</span>
+                            <!-- SubMenu -->
                             <ul class="nav__sub-nav">
                                 <li class="nav__sub-nav--li">
-                                    <a href="/pages/rrhh-politicas.html">Políticas</a>
+                                    <a href="rrhh-politicas.html">Políticas</a>
                                 </li>
                                 <li class="nav__sub-nav--li">
-                                    <a href="/pages/rrhh.html">Envia tu CV</a>
+                                    <a href="rrhh.html">Envia tu CV</a>
                                 </li>
                             </ul>
+                            <!-- -- -->
                         </li>
                         <li>
-                            <a class="nav__ul__link" href="/pages/contacto.html">Contacto</a>
+                            <a class="nav__ul__link" href="contacto.html">Contacto</a>
                         </li>
                         <li>
-                            <a class="nav__ul__link" href="/pages/nuestros-servicios.html">Nuestros servicios</a>
+                            <a class="nav__ul__link" href="nuestros-servicios.html">Nuestros servicios</a>
                         </li>
                         <li>
-                            <a class="nav__ul__link" href="/pages/naturaleza.html">Naturaleza</a>
+                            <a class="nav__ul__link" href="naturaleza.html">Naturaleza</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </header>
-
-        <section class="secction-1rrhh">            
+        <main>
+            <section class="secction-1rrhh">            
             <div class="rrhh-container"> 
                 <div class="rrhh-container__text">
                     <h1>¡Unite a nuestro equipo!</h1>
@@ -113,10 +137,23 @@
                 </div>
             </div>
         </section>
-
-
-        <!-- FOOTER-->
+        </main>
+         <!-- FOOTER-->
         <footer class="footer">
+            <!-- FOOTER REDES MOBILE-->
+            <div class="redes_container_mobile">
+                <div class="footer__text">
+                    <a href="https://m.facebook.com/Grupo-Aldo-Cleaning-SRL-103333041358407/" target="_blank">
+                        <img class="logo" src="../assetts/logos/icon-fb.png" alt="Facebook">
+                    </a>
+                </div>
+                <div class="footer__text">
+                    <a href="https://www.instagram.com/grupoaldocleaning/" target="_blank">
+                        <img class="logo" src="../assetts/logos/icon-insta.png" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+            <!-- ----- -->
             <div class="footer__text">
                 <span>© 2018 Grupo Aldo Cleaning SRL</span>
             </div>
@@ -135,16 +172,20 @@
                 <img class="logo logo_mail" src="../assetts/logos/icon-mail.png" alt="Email">
                 <span>aldocleaningsrl@hotmail.com</span>
             </div>
-            <div class="footer__text">
-                <a href="https://m.facebook.com/Grupo-Aldo-Cleaning-SRL-103333041358407/" target="_blank">
-                    <img class="logo" src="../assetts/logos/icon-fb.png" alt="Facebook">
-                </a>
+            <!-- REDES DESKTOP-->
+            <div class="redes_container_desktop">
+                <div class="footer__text">
+                    <a href="https://m.facebook.com/Grupo-Aldo-Cleaning-SRL-103333041358407/" target="_blank">
+                        <img class="logo" src="../assetts/logos/icon-fb.png" alt="Facebook">
+                    </a>
+                </div>
+                <div class="footer__text">
+                    <a href="https://www.instagram.com/grupoaldocleaning/" target="_blank">
+                        <img class="logo" src="../assetts/logos/icon-insta.png" alt="Instagram">
+                    </a>
+                </div>
             </div>
-            <div class="footer__text">
-                <a href="https://www.instagram.com/grupoaldocleaning/" target="_blank">
-                    <img class="logo" src="../assetts/logos/icon-insta.png" alt="Instagram">
-                </a>
-            </div>
+            <!-- ------ -->
         </footer>
         <!-- ------ -->
     </div>

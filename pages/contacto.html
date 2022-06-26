@@ -19,102 +19,142 @@
         <header class="header">
             <div class="header__container">
                 <div class="header__container__img">
-                    <a href="/index.html">
+                    <a href="../index.html">
                         <img  src="../assetts/logos/logo-gota-color.png" alt="logo-GAC">
                     </a>
                 </div>
+                <!--MENU HAMBURGER-->
+                <div class="nav_burger">
+                    <nav role="navigation">
+                        <div id="menuToggle">
+                          
+                          <input type="checkbox" />
+                          <span></span>
+                          <span></span>
+                          <span></span>                          
+                          <ul id="menu">
+                            <a href="../index.html"><li>Home</li></a>
+                            <a href="nosotros.html"><li>Nosotros</li></a>                            
+                            <a href="contacto.html"><li>Contacto</li></a>
+                            <a href="rrhh-politicas.html"><li>Politicas</li></a>
+                            <a href="rrhh.html"><li>Envia tu CV</li></a>
+                            <a href="nuestros-servicios.html"><li>Nuestros servicios</li></a>
+                            <a href="naturaleza.html"><li>Naturaleza</li></a>
+                          </ul>
+                        </div>
+                      </nav>
+                </div>   
+                <!---------------->
                 <nav class="my_nav">
                     <ul class="nav__ul">
                         <li>
-                            <a class="nav__ul__link" href="/index.html">HOME</a>
+                            <a class="nav__ul__link" href="../index.html">HOME</a>
                         </li>
                         <li>
-                            <a class="nav__ul__link" href="/pages/nosotros.html">Nosotros</a>
+                            <a class="nav__ul__link" href="nosotros.html">Nosotros</a>
                         </li>
                         <li>
                             <span class="nav__ul__link no_cursor">RRHH</span>
+                            <!-- SubMenu -->
                             <ul class="nav__sub-nav">
                                 <li class="nav__sub-nav--li">
-                                    <a href="/pages/rrhh-politicas.html">Políticas</a>
+                                    <a href="rrhh-politicas.html">Políticas</a>
                                 </li>
                                 <li class="nav__sub-nav--li">
-                                    <a href="/pages/rrhh.html">Envia tu CV</a>
+                                    <a href="rrhh.html">Envia tu CV</a>
                                 </li>
                             </ul>
+                            <!-- -- -->
                         </li>
                         <li>
-                            <a class="nav__ul__link" href="/pages/contacto.html">Contacto</a>
+                            <a class="nav__ul__link" href="contacto.html">Contacto</a>
                         </li>
                         <li>
-                            <a class="nav__ul__link" href="/pages/nuestros-servicios.html">Nuestros servicios</a>
+                            <a class="nav__ul__link" href="nuestros-servicios.html">Nuestros servicios</a>
                         </li>
                         <li>
-                            <a class="nav__ul__link" href="/pages/naturaleza.html">Naturaleza</a>
+                            <a class="nav__ul__link" href="naturaleza.html">Naturaleza</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </header>
-
-        <section class="secction-1 contacto">
-            <div id="form__background">
-                <img id="img_form" src="../assetts/Imagenes/logo-empresa.png" alt="logo empresa gac">
-                <div class="container__form">
-                    <div class="title_form">
-                        <h1>Comunicate con nosotros</h1>
-                        <h2>No dude en contratar los servicios profesionales de limpieza de Grupo Aldo Cleaning SRL y así asegurarse de obtener un servicio profesional con amplia experiencia en el mercado.</h2>
-                    </div>                
-                    <form class="form__container" action="" method="GET" enctype="multipart/form-data">
-                        
-                        <fieldset class="fieldset_container">
-                            <div>                            
-                                <label for="empresa">Empresa<span class="requiered">*</span></label>
-                                <input type="text" name="empresa">
-                            </div>
-                            <div>
-                                <label for="apellido">Nombre y apellido<span class="requiered">*</span></label>
-                                <input type="text" name="apellido" required>
-                            </div>                        
-                        </fieldset>
-                        <fieldset class="fieldset_container">
-                            <div>
-                                <label for="email">Email<span class="requiered">*</span></label>
-                                <input type="email" name="email" required>
-                            </div>                        
-                            <div>
-                                <label for="telefono">Telefono | WhatsApp<span class="requiered">*</span></label>
-                                <input type="number" name="telefono">
-                            </div>                        
-                        </fieldset>
-                        <fieldset class="fieldset_container">
-                            <div>
-                                <label for="comentario">Tu mensaje<span class="requiered">*</span></label>
-                                <textarea name="comentario" id="" cols="30" rows="10" placeholder="Escribinos aquí..."></textarea>
-                            </div>
-                            <div>
-                                <label for="antispam">Tildar sistema anti SPAM<span class="requiered">*</span></label>
-                                <div class="check_container">                                                                    
-                                    <input id="checkbox" type="checkbox" name="antispam" required> 
-                                    <span>No soy un robot</span>
-                                    <div id="img_check_container">                                        
-                                        <img id="img_check" src="../assetts/logos/captcha.png" alt="captcha">
-                                    </div>
-                                </div>                                          
-                            </div>                                                       
-                        </fieldset>
-                        <div class="container__btn">
-                            <button class="button">
-                                <span class="text-btn">Enviar</span>
-                                <i class="ri-check-line icon"></i>
-                            </button>
-                        </div> 
-                    </form>
-                </div>  
-            </div>
-        </section>   
+        <main>
+            <section class="secction-1 contacto">
+                <div id="form__background">
+                    <img id="img_form" src="../assetts/Imagenes/logo-empresa.png" alt="logo empresa gac">
+                    <div class="container__form">
+                        <div class="title_form">
+                            <h1>Comunicate con nosotros</h1>
+                            <h2>No dude en contratar los servicios profesionales de limpieza de Grupo Aldo Cleaning SRL y así asegurarse de obtener un servicio profesional con amplia experiencia en el mercado.</h2>
+                        </div>                
+                        <form class="form__container" action="" method="GET" enctype="multipart/form-data">
+                            
+                            <fieldset class="fieldset_container">
+                                <div>                            
+                                    <label for="empresa">Empresa<span class="requiered">*</span></label>
+                                    <input type="text" name="empresa">
+                                </div>
+                                <div>
+                                    <label for="apellido">Nombre y apellido<span class="requiered">*</span></label>
+                                    <input type="text" name="apellido" required>
+                                </div>                        
+                            </fieldset>
+                            <fieldset class="fieldset_container">
+                                <div>
+                                    <label for="email">Email<span class="requiered">*</span></label>
+                                    <input type="email" name="email" required>
+                                </div>                        
+                                <div>
+                                    <label for="telefono">Telefono | WhatsApp<span class="requiered">*</span></label>
+                                    <input type="number" name="telefono">
+                                </div>                        
+                            </fieldset>
+                            <fieldset class="fieldset_container fieldser_textarea">
+                                <div class="text_area">
+                                    <label for="comentario">Tu mensaje<span class="requiered">*</span></label>
+                                    <textarea name="comentario" id="" cols="30" rows="10" placeholder="Escribinos aquí..."></textarea>
+                                </div>
+                                <div class="check">
+                                    <label for="antispam">Tildar sistema anti SPAM<span class="requiered">*</span></label>
+                                    <div class="check_container">                                                                    
+                                        <input id="checkbox" type="checkbox" name="antispam" required> 
+                                        <span>No soy un robot</span>
+                                        <div id="img_check_container">                                        
+                                            <img id="img_check" src="../assetts/logos/captcha.png" alt="captcha">
+                                        </div>
+                                    </div>                                          
+                                </div>                                                       
+                            </fieldset>
+                            <div class="container__btn">
+                                <button class="button">
+                                    <span class="text-btn">Enviar</span>
+                                    <i class="ri-check-line icon"></i>
+                                </button>
+                            </div> 
+                        </form>
+                    </div>  
+                </div>
+            </section> 
+        </main>
+          
 
         <!-- FOOTER-->
         <footer class="footer">
+            <!-- FOOTER REDES MOBILE-->
+            <div class="redes_container_mobile">
+                <div class="footer__text">
+                    <a href="https://m.facebook.com/Grupo-Aldo-Cleaning-SRL-103333041358407/" target="_blank">
+                        <img class="logo" src="../assetts/logos/icon-fb.png" alt="Facebook">
+                    </a>
+                </div>
+                <div class="footer__text">
+                    <a href="https://www.instagram.com/grupoaldocleaning/" target="_blank">
+                        <img class="logo" src="../assetts/logos/icon-insta.png" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+            <!-- ----- -->
             <div class="footer__text">
                 <span>© 2018 Grupo Aldo Cleaning SRL</span>
             </div>
@@ -133,16 +173,20 @@
                 <img class="logo logo_mail" src="../assetts/logos/icon-mail.png" alt="Email">
                 <span>aldocleaningsrl@hotmail.com</span>
             </div>
-            <div class="footer__text">
-                <a href="https://m.facebook.com/Grupo-Aldo-Cleaning-SRL-103333041358407/" target="_blank">
-                    <img class="logo" src="../assetts/logos/icon-fb.png" alt="Facebook">
-                </a>
+            <!-- REDES DESKTOP-->
+            <div class="redes_container_desktop">
+                <div class="footer__text">
+                    <a href="https://m.facebook.com/Grupo-Aldo-Cleaning-SRL-103333041358407/" target="_blank">
+                        <img class="logo" src="../assetts/logos/icon-fb.png" alt="Facebook">
+                    </a>
+                </div>
+                <div class="footer__text">
+                    <a href="https://www.instagram.com/grupoaldocleaning/" target="_blank">
+                        <img class="logo" src="../assetts/logos/icon-insta.png" alt="Instagram">
+                    </a>
+                </div>
             </div>
-            <div class="footer__text">
-                <a href="https://www.instagram.com/grupoaldocleaning/" target="_blank">
-                    <img class="logo" src="../assetts/logos/icon-insta.png" alt="Instagram">
-                </a>
-            </div>
+            <!-- ------ -->
         </footer>
         <!-- ------ -->
     </div>

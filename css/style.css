@@ -59,8 +59,9 @@ body{
 }
 
 .container-web{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 125px auto 90px;
     width: 90%;
     margin: 0 auto;
     
@@ -250,7 +251,7 @@ body{
 
 #menuToggle a:hover
 {
-  color: tomato;
+  color: #fff;
 }
 
 
@@ -322,22 +323,23 @@ body{
 #menu
 {
   position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -250px;
-  padding: 50px;
+  width: 250px;
+  margin: -100px 0 0 -200px;
+  padding: 25px;
   padding-top: 125px;   
-  background: #ededed;
+  background: rgba(247, 235, 223, 1);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
   transform: translate(0, -100%);
-  
+  border-radius: 0 0 0 7px;
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  
 }
 
 #menu li
 {
-  padding: 10px 0;
+  padding: 15px 0;
   font-size: 22px;
 }
 
@@ -481,11 +483,9 @@ body{
 
 /*SECTION 1 CONTACTO*/
 
-.secction-1 .contacto { 
+.secction-1, .contacto { 
     margin: auto;
-    width: 90%;
-    height: 100vh;
-    min-height: 800px;    
+    width: 100%;       
     text-align: center;
 }
 
@@ -687,7 +687,7 @@ textarea:focus {
 
 /*SECTION 1 NOSOTROS*/
 
-.text-container {
+.text-container-nosotros {
 	background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("/assetts/Imagenes/image832.png");
 	background-attachment: fixed;
 	background-position:center;
@@ -703,7 +703,7 @@ textarea:focus {
 
 }
 
-.text-container h1 {
+.text-container-nosotros h1 {
 	text-align: center;
 	color: #fff;
 	background-color: rgba(78, 139, 189, 0.3);
@@ -714,7 +714,7 @@ textarea:focus {
 	margin-top: 211px;
 }
 
-.text-container h2 {
+.text-container-nosotros h2 {
 	margin: 25px 0 10px 0;
     font-size: 28px;
     margin-top: 60px;
@@ -727,7 +727,7 @@ textarea:focus {
 	
 }
 
-.text-container h3 {
+.text-container-nosotros h3 {
 	margin-top: 50px;
     font-size: 18px;
     text-align: center;
@@ -736,12 +736,12 @@ textarea:focus {
 	
 }
 
-.text-container h3 span {
+.text-container-nosotros h3 span {
 	font-weight: bold;
 }
 
 
-.text-container p {
+.text-container-nosotros p {
 	line-height: 1.5rem;
 	font-size: 18px;
 	padding: 0 4rem 0 4rem;
@@ -893,6 +893,40 @@ textarea:focus {
 
 /*****************************/
 
+/****NNUESTROS SERVICIOS*****/
+
+.grid_container_ns {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr 2fr;
+    border: 1px solid black;
+    align-items: center;
+    justify-items: start;
+}
+
+.grid_item_ns{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    
+}
+
+.end {
+    justify-self: end;    
+    flex-direction: row-reverse;
+    
+}
+
+.imgp{
+    width: 120px;
+    height: 120px;
+    background-color: #44c08a;
+}
+
+
+/*****************************/
+
 /****USOS COMUNES*****/
 
 .requiered{
@@ -904,7 +938,7 @@ textarea:focus {
     
 }
 
-
+/*****************************/
 
 
 
@@ -968,9 +1002,7 @@ textarea:focus {
 
 /*****************************/
 
-.secction-1 {
-    text-align: center;
-}
+
 
 
 
@@ -978,10 +1010,11 @@ textarea:focus {
 @media screen and (max-width: 600px) {
     
     .container-web{        
-        width: 100%;        
+        width: 100%;
+        grid-template-rows: 121px auto 300px;        
         
     }
-
+    /*****HEADER*******/
     .header__container{
         justify-content: space-between;
     }
@@ -994,7 +1027,9 @@ textarea:focus {
     .nav_burger{
         display: block;
     }
+    /**************/
     
+    /*****HOME*******/
     #img_logo_empresa {
         width: 50%;
     }
@@ -1011,6 +1046,93 @@ textarea:focus {
         flex-direction: column;
         gap: 25px;
     }
+    /*****************/
+
+    /*****NOSOTROS*******/
+
+    .text-container-nosotros h1 {
+        margin-top: 180px;
+        padding: 10px 0 10px 0;
+        font-size: 32px;
+    }
+
+    .text-container-nosotros h2 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 20px;
+        font-size: 18px;
+        width: 100%;        
+        
+    }
+
+    .text-container-nosotros h3 {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    .text-container-nosotros p {
+        font-size: 16px;
+    }
+
+    .text-container-nosotros ul li {
+        font-size: 16px;
+    }
+
+    /*****************/    
+
+    /*****CONTACTO*******/
+
+    .title_form {
+        width: 100%;
+    }
+
+    .title_form h1 {
+        font-size: 30px;
+        line-height: 30px;
+        padding-bottom: 15px;
+    }
+
+    .container__form, .form_container, .fieldset_container {
+        display: flex;        
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .fieldser_textarea {
+        height: 1000px;
+    }
+
+    #img_form{
+        width: 100%;
+        min-height: 1000px;
+        object-fit: cover;
+    }
+
+    .fieldset_container {
+        height: 150px;
+        
+        
+    }
+
+    .fieldset_container div{
+        margin: auto;
+    }
+
+    .text_area {
+        height: 300px;
+        margin-top: 100px;
+        width: 100%;
+               
+        
+    }
+    .check{
+        height: 200px;
+        margin-top: 500px;
+        
+    }
+
+    /*****FOOTER*******/
 
     .footer {
         flex-direction: column;
@@ -1049,6 +1171,7 @@ textarea:focus {
         display: flex;  
         gap: 25px;      
     }
+    /*****************/
 }
 
 
