@@ -487,17 +487,21 @@ body{
     margin: auto;
     width: 100%;       
     text-align: center;
+    
 }
 
 #form__background {
     position: relative;
     text-align: center;
+    
 
 }
 
 #img_form {    
-    width: 700px;    
+        
     opacity: 0.3;
+    object-fit: contain;
+    min-height: 650px;
 }
 
 
@@ -505,9 +509,9 @@ body{
 /*******FORM CONTACTO************/
 
 .container__form {
-    width: 90%;
+    width: 100%;
     position: absolute;
-    top: 30px;
+    top: 161px;
     margin: auto;
     left: 0;
     right: 0;
@@ -688,7 +692,7 @@ textarea:focus {
 /*SECTION 1 NOSOTROS*/
 
 .text-container-nosotros {
-	background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("/assetts/Imagenes/image832.png");
+	background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../assetts/Imagenes/image832.png");
 	background-attachment: fixed;
 	background-position:center;
 	background-repeat: no-repeat;
@@ -782,7 +786,7 @@ textarea:focus {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	background-position: -550px 70px;
+	background-position: -500px 70px;
 	width: 100%;	
 	margin-top: -161px;
 	padding-top: 161px;
@@ -893,22 +897,48 @@ textarea:focus {
 
 /*****************************/
 
-/****NNUESTROS SERVICIOS*****/
+/****NUESTROS SERVICIOS*****/
+
+#title-services {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 15px;
+    text-align: center;
+    letter-spacing: 0.23em;
+    color: #141B30;
+}
+
+#subtitle-service {
+    font-family: 'Inter';
+    font-style: normal;    
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #333333;
+    padding-top: 15px;
+}
 
 .grid_container_ns {
     margin-top: 25px;
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 1fr 1fr 2fr;
-    border: 1px solid black;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(7, auto);
+    gap: 10px;
     align-items: center;
     justify-items: start;
 }
 
 .grid_item_ns{
-    border: 1px solid black;
+    
     display: flex;
     align-items: center;
+    border-bottom: .5px solid #777;
+    padding: 15px 0 15px 0
+    
+    
+    
     
 }
 
@@ -918,14 +948,314 @@ textarea:focus {
     
 }
 
-.imgp{
-    width: 120px;
-    height: 120px;
-    background-color: #44c08a;
+.img-service{
+    flex-shrink: 0;
+    width: 50%;
+    height: 50vh;    
+    position: relative;
+    
+    
+}
+
+.img-service img {
+    object-fit: cover;
+    object-position: left;
+    width: 100%;
+    height: 100%;  
+    
+    
+    
+
+}
+
+
+
+.img-service__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;    
+    z-index: 50;
+    background: rgba(190, 205, 224, 0.64);
+    font-family: 'Inter';
+    height: 70px;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #FFFFFF;
+    
+    
+
+}
+
+
+
+.info_hidden{
+    display: flex;
+    flex-direction: column;
+    width: 100%;    
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+.info_service {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;    
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color: #333;
+    padding: 12px;
+    background-color: rgba(243, 224, 203, 0.5);
+    
+}
+
+.btn_service { 
+    width: 150px;
+    height: 50px;    
+    border: none;   
+    color: black;    
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-style: normal;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 20px;    
+    background-color: rgba(243, 224, 203, 0.5);
+}
+
+.btn_service:hover {
+    color: #141B30;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.aditional {
+    flex-direction: column;
+}
+
+#title_adition {
+    font-family: 'Inter';
+    width: 100%;
+    padding: 15px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #141B30;
+    background-color: rgba(243, 224, 203, 0.5);
+    
+}
+
+.adition_info_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 20px;
+    margin: 10px;
+
+}
+
+
+
+.aditional_info { 
+    padding: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #444;
+    transition: all .7s;
+}
+
+.star{
+width: 25px;
+
+}
+
+.aditional_info:hover {
+    color: #000000;
+    font-size: 20px;
+   
+}
+
+.client{
+    flex-direction: column;
+    width: 100%;
+}
+
+#title_clients{
+
+    font-family: 'Inter';
+    width: 100%;
+    padding: 12px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #141B30;
+    background-color: rgba(243, 224, 203, 0.5);
+
+}
+
+.img_clientes_box{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    align-items: center;
+    
+}
+
+.img_clientes{          
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-height: 130px;
+    margin-top: 10px;
+}
+
+.img_clientes img{
+    width: 130px;
+    
 }
 
 
 /*****************************/
+
+
+
+/****NATURALEZA*****/
+
+.naturaleza_box {
+    display: grid;
+    grid-template-columns: 25% auto 25%;
+    grid-template-rows: auto;  
+    
+    min-height: 100vh; 
+}
+
+
+
+
+#img_colum1{
+    background-image: url("/assetts/Imagenes/naturaleza2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all 4s;
+    
+    
+    
+}
+
+#img_colum2{
+    background-image: url("/assetts/Imagenes/naturaleza1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.naturaleza_colum h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 39px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #222E50;
+    padding: 10px 2px 15px 2px;
+}
+
+.naturaleza_colum h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;  
+    text-align: center;
+    color: #000000;
+    padding: 10px 2px 15px 2px;
+}
+
+.box_info h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: left;
+    color: rgba(53, 87, 53, 0.97);
+    background: rgba(178, 162, 147, 0.21);
+    padding: 5px 2px 7px 2px;
+    margin: 5px 2px 7px 2px;
+    cursor: pointer;
+    
+}
+
+.naturaleza_colum {
+    background-position: center;
+    transition: all 4s;
+    
+}
+
+.box_info .parrafo_natu{
+    color: #000000;
+    
+    
+}
+
+.parrafo_natu{    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000000;
+    text-align: left;
+    padding: 0 10px 0 10px;
+    display: none; 
+    transition: all 4s;
+}
+
+.box_info:hover .parrafo_natu {
+    display: block;   
+}
+
+.parrafo_natu:hover{
+    color: rgba(53, 87, 53, 0.97);
+}
+
+
+/*****************************/
+
+
+
+
+
+
+
+
+
+
+
+
 
 /****USOS COMUNES*****/
 
@@ -1099,13 +1429,29 @@ textarea:focus {
         text-align: center;
         
     }
+
+    #form__background { 
+        min-height: 1000px;
+    }
+
+    .fieldset_container div{
+        width: 100%;
+        margin: auto;
+        
+    }
+
+    .fieldset_container div input{
+        width: 100%;        
+        
+    }
+
+
     .fieldser_textarea {
         height: 1000px;
     }
 
     #img_form{
-        width: 100%;
-        min-height: 1000px;
+        width: 100%;        
         object-fit: cover;
     }
 
@@ -1113,15 +1459,18 @@ textarea:focus {
         height: 150px;
         
         
+        
     }
 
-    .fieldset_container div{
-        margin: auto;
+    .fieldser_textarea {
+        margin: 0 auto;
+        height: 370px;
     }
 
     .text_area {
-        height: 300px;
-        margin-top: 100px;
+        margin-top: 0px;
+        padding-top: 0px;
+        height: 0px;           
         width: 100%;
                
         
@@ -1129,8 +1478,89 @@ textarea:focus {
     .check{
         height: 200px;
         margin-top: 500px;
+        padding-top: 15px ;
         
     }
+
+    .container__btn {
+        height: 50px;
+        margin-top: 15px;
+    }
+
+    .container__btn button {
+        height: 50px;
+        margin: 0px;
+    }
+
+
+    /****NNUESTROS SERVICIOS*****/
+
+    .img-service {
+        width: 100%;
+    }
+
+    .grid_item_ns {
+        flex-wrap: wrap;
+    }
+
+    .adition_info_box { 
+        flex-wrap: wrap;
+    }
+
+    .img_clientes {
+        margin-top: 12px;
+        width: 70px;
+        
+    }
+
+    .img_clientes img {
+        width: 100%;
+    }
+
+     /*****************/
+
+     /****RRHH personal*****/
+
+     .rrhh-container{        
+        background-position: -500px 70px;
+      
+        
+        
+    }
+    /*****************/
+
+    /****MEDIO AMBIENTE*****/
+
+    .naturaleza_box {
+        
+        grid-template-columns: auto 30%;
+        
+    }
+
+    #img_colum1 {
+        display: none;
+    }
+
+    .naturaleza_colum h1 {
+        font-size: 20px;
+    } 
+
+    .naturaleza_colum h3 {
+        font-size: 16px;
+    } 
+
+    .box_info h2 { 
+        font-size: 20px;
+    }
+
+    .parrafo_natu {
+        font-size: 14px;
+    }
+
+
+    
+    /*****************/
+
 
     /*****FOOTER*******/
 
