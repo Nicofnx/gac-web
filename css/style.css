@@ -1349,6 +1349,10 @@ width: 25px;
         justify-content: space-between;
     }
 
+    .header__container__img {
+        margin-top: 10px;
+    }
+
     .my_nav {        
         display: none;
         
