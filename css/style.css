@@ -53,7 +53,7 @@ table {
 }
 
 body{
-    font-family: 'Inter'
+    font-family: 'Open Sans', sans-serif;
     /*background: rgba(247, 235, 223, 0.5);*/
     
 }
@@ -66,6 +66,8 @@ body{
     margin: 0 auto;
     
 }
+
+
 
 /******************************/
 
@@ -350,7 +352,7 @@ body{
 }
 
 /******************************/
-/*SECTION 1*/
+/*SECTION 1 HOME*/
 
 .section-1__container{
     width: 100%;
@@ -408,14 +410,36 @@ body{
 #img_logo_empresa{
     width: 350px;
     margin: auto;
+    animation-name: pulse;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
 }
 
+@keyframes pulse {
+    0% {
+        opacity: 1;
+        transform: scale(0.9);
+    }
+
+    50% {
+        opacity: 0.6;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(0.9);
+    }
+    
+}
 
 
 /*****************************/
 
 
-/*SECTION 2*/
+/*SECTION 2 HOME*/
 .secction-2{
     width: 100%;
     margin-top: 50px;  
@@ -432,29 +456,38 @@ body{
     position: relative;
     width: 25rem;
     height: 25rem;
+    box-shadow: 15px 18px 17px 0px rgba(122, 72, 33, 0.3);
+    transition: all 2s;
 }
 
-.card::after{
-    position: absolute;
-    content: "";
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background: #eacda3;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #866c4a, #e4c497);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #866c4a, #e4c497); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    filter: blur(10px);
-    z-index: -1;
+
+
+.card:hover .img-card {
+    transform: scale(1.2);
+    
 }
+
+.card:hover {
+    color: var(--text-color-blue)
+}
+
 
 
 .card-img-top{
+    width: 100%;
     height: 100px;
-    object-fit: cover;
-    border-radius: 5px;
+    overflow: hidden;
+    
     
 }
+
+.img-card {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s;
+}
+
 
 .card-img-top:nth-child(2){
     border-radius: 0px 0px 5px 5px;
@@ -476,7 +509,51 @@ body{
     transform: scale(2);
     
 }
+/*****************************/
+/*SECTION 3 HOME*/
 
+.section-3{
+    display: grid;
+    grid-template-columns: auto 350px;
+    grid-template-rows: auto;
+    background: linear-gradient(#c5ced5, #BCC3CE);
+    
+
+    
+}
+
+#detalles-home {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;    
+    border: 2px solid #fff;
+    color: #434343;
+    
+    
+}
+
+#detalles-home h2 {
+    font-size: 42px;
+    padding: 10px;
+}
+
+#detalles-home h3 {
+    font-size: 22px;
+    padding: 7px 25px;
+}
+
+#detalles-home p {
+    font-size: 16px;
+    text-align: justify;
+    padding: 7px 25px;
+}
+
+#img-women {
+    background-position: right;
+    background-size: cover;
+    border: 2px solid #fff;
+    background-image: url("../assetts/Imagenes/home-details.png");
+    background-repeat: no-repeat;
+}
 
 
 /*****************************/
@@ -528,7 +605,7 @@ body{
 
 .title_form h1 {
     text-align: center;
-    font-family: 'Inter';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -538,7 +615,7 @@ body{
 
 .title_form h2 {
     text-align: center;
-    font-family: 'Inter';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -804,7 +881,7 @@ textarea:focus {
 	font-size: 32px;
 	margin-bottom: 20px;
 	color: #141B30;;
-	font-family: 'Inter';
+	font-family: 'Open Sans', sans-serif;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 40px;
@@ -900,7 +977,7 @@ textarea:focus {
 /****NUESTROS SERVICIOS*****/
 
 #title-services {
-    font-family: 'Inter';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -911,7 +988,7 @@ textarea:focus {
 }
 
 #subtitle-service {
-    font-family: 'Inter';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;    
     font-size: 20px;
     line-height: 30px;
@@ -980,10 +1057,10 @@ textarea:focus {
     left: 0;    
     z-index: 50;
     background: rgba(190, 205, 224, 0.64);
-    font-family: 'Inter';
+    font-family: 'Open Sans', sans-serif;
     height: 70px;
     font-style: normal;
-    font-weight: 200;
+    font-weight: 600;
     font-size: 24px;
     line-height: 30px;
     text-align: center;
@@ -1026,7 +1103,7 @@ textarea:focus {
     color: black;    
     border-radius: 6px;
     cursor: pointer;
-    font-family: 'Inter';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     padding: 0;
     margin-top: 20px;
@@ -1044,7 +1121,7 @@ textarea:focus {
 }
 
 #title_adition {
-    font-family: 'Inter';
+    font-family: 'Open Sans', sans-serif;
     width: 100%;
     padding: 15px;
     font-style: normal;
@@ -1071,7 +1148,7 @@ textarea:focus {
 
 .aditional_info { 
     padding: 10px;
-    font-family: 'Inter';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1099,7 +1176,7 @@ width: 25px;
 
 #title_clients{
 
-    font-family: 'Inter';
+    font-family: 'Open Sans', sans-serif;
     width: 100%;
     padding: 12px;
     font-style: normal;
@@ -1158,21 +1235,49 @@ width: 25px;
     background-position: center;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    transition: all 4s;
-    
-    
+    animation-name: dezplazar1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
     
 }
+
+@keyframes dezplazar1 {
+    0% {
+        background-position: right;
+        webkit-filter: grayscale(0);
+        filter: grayscale(0);
+    }
+    100% {
+        background-position: center;
+        webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+}
+
+
 
 #img_colum2{
     background-image: url("../assetts/Imagenes/naturaleza1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    animation-name: dezplazar2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+}
+
+@keyframes dezplazar2 {
+    0% {
+        background-position: left;       
+    }
+    100% {
+        background-position: center;
+        
+    }
 }
 
 .naturaleza_colum h1 {
-    font-family: 'Inter';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
@@ -1184,7 +1289,7 @@ width: 25px;
 }
 
 .naturaleza_colum h3 {
-    font-family: 'Inter';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -1195,7 +1300,7 @@ width: 25px;
 }
 
 .box_info h2 {
-    font-family: 'Inter';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
@@ -1211,7 +1316,7 @@ width: 25px;
 
 .naturaleza_colum {
     background-position: center;
-    transition: all 4s;
+    
     
 }
 
@@ -1222,7 +1327,7 @@ width: 25px;
 }
 
 .parrafo_natu{    
-    font-family: 'Inter';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -1349,10 +1454,6 @@ width: 25px;
         justify-content: space-between;
     }
 
-    .header__container__img {
-        margin-top: 10px;
-    }
-
     .my_nav {        
         display: none;
         
@@ -1379,6 +1480,15 @@ width: 25px;
     .secction-2 {
         flex-direction: column;
         gap: 25px;
+    }
+
+    .section-3 {
+        border: none;
+        grid-template-columns: auto;
+    }
+
+    #img-women{
+        display: none
     }
     /*****************/
 
@@ -1503,6 +1613,14 @@ width: 25px;
         width: 100%;
     }
 
+    #title-services {
+        font-size: 22px;
+    }
+
+    #subtitle-service {
+        font-size: 16px;
+    }
+
     .grid_item_ns {
         flex-wrap: wrap;
     }
@@ -1519,6 +1637,10 @@ width: 25px;
 
     .img_clientes img {
         width: 100%;
+    }
+
+    .info_service {
+        font-size: 14px;
     }
 
      /*****************/
