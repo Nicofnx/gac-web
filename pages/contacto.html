@@ -83,51 +83,57 @@
         </header>
         <main>
             <section class="secction-1 contacto">
-                <div id="form__background">
-                    <img id="img_form" src="../assetts/Imagenes/logo-empresa.png" alt="logo empresa gac">                      
-                </div>
                 <div class="container__form">
                     <div class="title_form">
                         <h1>Comunicate con nosotros</h1>
                         <h2>No dude en contratar los servicios profesionales de limpieza de Grupo Aldo Cleaning SRL y así asegurarse de obtener un servicio profesional con amplia experiencia en el mercado.</h2>
                     </div>                
-                    <form class="form__container" action="" method="GET" enctype="multipart/form-data">
+                    <form class="form__container2" action="" method="GET" enctype="multipart/form-data">
                         
                         <fieldset class="fieldset_container">
-                            <div>                            
-                                <label for="empresa">Empresa<span class="requiered">*</span></label>
-                                <input type="text" name="empresa">
-                            </div>
-                            <div>
-                                <label for="apellido">Nombre y apellido<span class="requiered">*</span></label>
-                                <input type="text" name="apellido" required>
-                            </div>                        
-                        </fieldset>
-                        <fieldset class="fieldset_container">
-                            <div>
-                                <label for="email">Email<span class="requiered">*</span></label>
-                                <input type="email" name="email" required>
-                            </div>                        
-                            <div>
-                                <label for="telefono">Telefono | WhatsApp<span class="requiered">*</span></label>
-                                <input type="number" name="telefono">
-                            </div>                        
-                        </fieldset>
-                        <fieldset class="fieldset_container fieldser_textarea">
-                            <div class="text_area">
-                                <label for="comentario">Tu mensaje<span class="requiered">*</span></label>
-                                <textarea name="comentario" id="" cols="30" rows="10" placeholder="Escribinos aquí..."></textarea>
-                            </div>
-                            <div class="check">
-                                <label for="antispam">Tildar sistema anti SPAM<span class="requiered">*</span></label>
-                                <div class="check_container">                                                                    
-                                    <input id="checkbox" type="checkbox" name="antispam" required> 
-                                    <span>No soy un robot</span>
-                                    <div id="img_check_container">                                        
-                                        <img id="img_check" src="../assetts/logos/captcha.png" alt="captcha">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 ">
+                                    <div>                            
+                                        <label for="empresa">Empresa<span class="requiered">*</span></label>
+                                        <input type="text" name="empresa">
                                     </div>
-                                </div>                                          
-                            </div>                                                       
+                                    <div>
+                                        <label for="email">Email<span class="requiered">*</span></label>
+                                        <input type="email" name="email" required>
+                                    </div>
+                                    <div>
+                                        <label for="apellido">Nombre y apellido<span class="requiered">*</span></label>
+                                        <input type="text" name="apellido" required>
+                                    </div>
+                                    <div>
+                                        <label for="telefono">Telefono | WhatsApp<span class="requiered">*</span></label>
+                                        <input type="number" name="telefono">
+                                    </div>                                        
+    
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    
+                                    
+                                    <div class="text_area">
+                                        <label for="comentario">Tu mensaje<span class="requiered">*</span></label>
+                                        <textarea name="comentario" id="" cols="30" rows="10" placeholder="Escribinos aquí..."></textarea>
+                                    </div>
+                                    <div class="check">
+                                        <label for="antispam">Tildar sistema anti SPAM<span class="requiered">*</span></label>
+                                        <div class="check_container">                                                                    
+                                            <input id="checkbox" type="checkbox" name="antispam" required> 
+                                            <span>No soy un robot</span>
+                                            <div id="img_check_container">                                        
+                                                <img id="img_check" src="../assetts/logos/captcha.png" alt="captcha">
+                                            </div>
+                                        </div>                                          
+                                    </div>            
+    
+    
+                                </div>
+
+                            </div>                           
+                                                                            
                         </fieldset>
                         <div class="container__btn">
                             <button class="button">
@@ -135,6 +141,7 @@
                                 <i class="ri-check-line icon"></i>
                             </button>
                         </div> 
+                        
                     </form>
                 </div>
             </section> 
