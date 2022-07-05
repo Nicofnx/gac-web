@@ -851,10 +851,9 @@ textarea:focus {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	background-position: -500px 70px;
+	background-position: -400px 90px;
 	width: 100%;	
-	margin-top: -161px;
-	padding-top: 161px;
+	margin-top: -161px;	
 	margin-bottom: 1px;
 	
 	
@@ -985,29 +984,10 @@ textarea:focus {
     padding-top: 15px;
 }
 
-.grid_container_ns {
-    margin-top: 25px;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(7, auto);
-    gap: 10px;
-    align-items: center;
-    justify-items: start;
-}
 
-.grid_item_ns{
-    
-    display: flex;
-    align-items: center;
-    border-bottom: .5px solid #777;
-    padding: 15px 0 15px 0
-    
-    
-    
-    
-}
 
 .end {
+    
     justify-self: end;    
     flex-direction: row-reverse;
     
@@ -1015,7 +995,7 @@ textarea:focus {
 
 .img-service{
     flex-shrink: 0;
-    width: 50%;
+    
     height: 50vh;    
     position: relative;
     
@@ -1206,9 +1186,9 @@ width: 25px;
 /****NATURALEZA*****/
 
 .naturaleza_box {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 25% auto 25%;
-    grid-template-rows: auto;  
+    grid-template-rows: auto;  */ 
     
     min-height: 100vh; 
 }
@@ -1581,7 +1561,7 @@ width: 25px;
      /****RRHH personal*****/
 
      .rrhh-container{        
-        background-position: -500px 70px;
+        background-position: -400px 70px;
       
         
         
