@@ -1,63 +1,18 @@
 @import "header";
 @import "footer";
+@import "reset";
 
 
-/*RESET CSS*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-    box-sizing: border-box;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/******************************/
 
 /*VARIABLES*/
 
 $text-color-blue: #141B30;
 $text-color-red: #f00;
 $border-solid-gray: 1px solid #555555;
-
+$primary-font: 'Open Sans', sans-serif;
 
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: $primary-font
     /*background: rgba(247, 235, 223, 0.5);*/
     
 }
@@ -91,7 +46,7 @@ body{
 
 
 .section-1__container__text{
-    font-family: 'Open Sans', sans-serif;
+    font-family: $primary-font;
     margin:  auto;
     text-align: center;    
     display: flex;
@@ -106,7 +61,7 @@ body{
     margin-top: 320px;
     
     text-align: center;
-    font-family: 'Open Sans', sans-serif;    
+    font-family: $primary-font;   
     font-style: normal;
     font-weight: 700;
     font-size: 34px;
@@ -221,7 +176,7 @@ body{
     padding: 5px 7px 5px 7px;
     color: #fff;
     border-radius: 5px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $primary-font;
     transition: all .5s;
 
     &:hover {
@@ -246,7 +201,7 @@ body{
 }
 
 #detalles-home {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $primary-font;
     text-align: center;    
     border: 2px solid #fff;
     color: #434343;
@@ -312,7 +267,7 @@ body{
     margin: auto;    
     h1 {
         text-align: center;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $primary-font;
         font-style: normal;
         font-weight: 700;
         font-size: 40px;
@@ -321,7 +276,7 @@ body{
     }
     h2 {
         text-align: center;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $primary-font;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
@@ -342,7 +297,7 @@ body{
 }
 
 .fieldset_container {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $primary-font;
     font-weight: lighter;
     font-size: 14px;
     text-align: left;
@@ -492,7 +447,7 @@ textarea {
 	background-size:cover;
 	margin-top: -161px;	
 	width: 100%;		
-	font-family: 'Open Sans', sans-serif;
+	font-family: $primary-font;
 	font-weight: 600;
 	height: min-content;
 	text-align: justify;
@@ -585,13 +540,13 @@ textarea {
 }
 
 .rrhh-container__text{
-	font-family: 'Open Sans', sans-serif;
+	font-family: $primary-font;
     h1{
         padding-top: 20px;
         font-size: 32px;
         margin-bottom: 20px;
         color: #141B30;;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $primary-font;
         font-style: normal;
         font-weight: 700;
         font-size: 40px;
@@ -603,7 +558,7 @@ textarea {
     p{
         margin-left: 50%;
         text-align: left;
-        font-family: 'Open Sans', sans-serif;
+        font-family: $primary-font;
         font-size: 20px;
         line-height: 27px;
         color: #333333;
@@ -631,7 +586,7 @@ textarea {
 	text-align: left;
 	margin-top: 30px;
 	margin-left: 50%;
-	font-family: 'Open Sans', sans-serif;
+	font-family: $primary-font;
 }
 
 .form__container form label{
@@ -646,7 +601,7 @@ textarea {
 	border-bottom: 2px solid rgba(190, 205, 224, 1);
 	width: 70%;
 	padding: 7px 7px 2px 7px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: $primary-font;
 }
 
 .area_cv{
@@ -655,7 +610,7 @@ textarea {
         padding-bottom: 15px;
     }
     input{	
-        font-family: 'Open Sans', sans-serif;
+        font-family: $primary-font;
         font-size: 16px;
         padding: 7px;
         border: none;
@@ -667,7 +622,7 @@ textarea {
 
 #btn_submit{
 	border: none;
-	font-family: 'Open Sans', sans-serif;
+	font-family: $primary-font;
 	font-size: 16px;
 	padding: 7px;
 	margin: auto;
@@ -692,7 +647,7 @@ textarea {
 
 
 #title-services {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $primary-font;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -703,7 +658,7 @@ textarea {
 }
 
 #subtitle-service {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $primary-font;
     font-style: normal;    
     font-size: 20px;
     line-height: 30px;
@@ -748,7 +703,7 @@ textarea {
     left: 0;    
     z-index: 50;
     background: rgba(190, 205, 224, 0.64);
-    font-family: 'Open Sans', sans-serif;
+    font-family: $primary-font;
     height: 70px;
     font-style: normal;
     font-weight: 600;
@@ -776,7 +731,7 @@ textarea {
 
 
 .info_service {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $primary-font;
     font-style: normal;    
     font-size: 18px;
     line-height: 32px;
@@ -794,7 +749,7 @@ textarea {
     color: black;    
     border-radius: 6px;
     cursor: pointer;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $primary-font;
     font-style: normal;
     padding: 0;
     margin-top: 20px;
@@ -814,7 +769,7 @@ textarea {
 }
 
 #title_adition {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $primary-font;
     width: 100%;
     padding: 15px;
     font-style: normal;
@@ -841,7 +796,7 @@ textarea {
 
 .aditional_info { 
     padding: 10px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: $primary-font;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -871,7 +826,7 @@ width: 25px;
 
 #title_clients{
 
-    font-family: 'Open Sans', sans-serif;
+    font-family: $primary-font;
     width: 100%;
     padding: 12px;
     font-style: normal;
@@ -972,7 +927,7 @@ width: 25px;
 .naturaleza_colum {
     background-position: center;
     h1 {
-        font-family: 'Open Sans', sans-serif;
+        font-family: $primary-font;
         font-style: normal;
         font-weight: 600;
         font-size: 28px;
@@ -983,7 +938,7 @@ width: 25px;
         padding: 10px 2px 15px 2px;
     }
     h3 {
-        font-family: 'Open Sans', sans-serif;
+        font-family: $primary-font;
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
@@ -998,7 +953,7 @@ width: 25px;
 
 .box_info {
     h2 {
-        font-family: 'Open Sans', sans-serif;
+        font-family: $primary-font;
         font-style: normal;
         font-weight: 400;
         font-size: 28px;
@@ -1028,7 +983,7 @@ width: 25px;
 
 
 .parrafo_natu{    
-    font-family: 'Open Sans', sans-serif;
+    font-family: $primary-font;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -1091,7 +1046,7 @@ width: 25px;
     }
 
     #logo-header {
-        margin-top: 12px;
+        margin-top: 15px;
     }
 
     .my_nav {        
