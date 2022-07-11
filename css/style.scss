@@ -50,11 +50,11 @@ table {
 /******************************/
 
 /*VARIABLES*/
-:root{
-    --text-color-blue: #141B30;
-    --text-color-red: #f00;
-    --border-solid-gray: 1px solid #555555
-}
+
+$text-color-blue: #141B30;
+$text-color-red: #f00;
+$border-solid-gray: 1px solid #555555;
+
 
 body{
     font-family: 'Open Sans', sans-serif;
@@ -111,7 +111,7 @@ body{
     font-weight: 700;
     font-size: 34px;
     line-height: 48px;
-    color: var(--text-color-blue)
+    color: $text-color-blue
 }
 
 
@@ -181,7 +181,7 @@ body{
     transition: all 2s;
 
     &:hover{
-        color: var(--text-color-blue);
+        color: $text-color-blue;
     }
     &:hover .img-card {
         transform: scale(1.2);
@@ -225,7 +225,7 @@ body{
     transition: all .5s;
 
     &:hover {
-        color: var(--text-color-blue);
+        color: $text-color-blue;
         font-weight: bold;
         transform: scale(2);
     }
@@ -362,7 +362,7 @@ body{
     padding: 5px;
     background: rgba(247, 235, 223, 0.5); 
     backdrop-filter: blur(8px);      
-    border: var(--border-solid-gray);
+    border: $border-solid-gray;
     
     
 }
@@ -393,7 +393,7 @@ textarea {
     
     background: rgba(247, 235, 223, 0.5);
     backdrop-filter: blur(8px);
-    border: var(--border-solid-gray);
+    border: $border-solid-gray;
     text-align: left;
     display: flex;
     justify-content: space-evenly;
@@ -423,7 +423,7 @@ textarea {
     text-align: center;
     display: flex;
     justify-content: center;
-    height: 75px;
+    height: 300px;
     
     
 }
@@ -433,7 +433,7 @@ textarea {
     height: 50px;
     font-size: 10x;
     background-color: rgba(247, 235, 223, 0.5);
-    border: var(--border-solid-gray);
+    border: $border-solid-gray;
     color: black;    
     border-radius: 4px;
     cursor: pointer;
@@ -684,6 +684,12 @@ textarea {
 /*****************************/
 
 /****NUESTROS SERVICIOS*****/
+
+
+
+
+
+
 
 #title-services {
     font-family: 'Open Sans', sans-serif;
@@ -1060,7 +1066,7 @@ width: 25px;
 /****USOS COMUNES*****/
 
 .requiered{
-	color: var(--text-color-red)
+	color: $text-color-red
 }
 
 .no_cursor {
@@ -1166,6 +1172,10 @@ width: 25px;
         }
     }
 
+    .container__btn {
+        height: 70px;
+    }
+
     
 
 
@@ -1198,6 +1208,10 @@ width: 25px;
             width: 100%;
         }
         
+    }
+
+    .info_hidden {
+        margin-bottom: 32px;
     }
 
 
