@@ -275,45 +275,21 @@ body {
   padding-top: 100px; }
   .section-1__container h3 {
     text-align: center; }
-
-.section-1__container__text {
-  font-family: "Open Sans", sans-serif;
-  margin: auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 400px; }
-
-#main_text {
-  margin-top: 320px;
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 34px;
-  line-height: 48px;
-  color: #141B30; }
-
-#img_back {
-  width: 100%;
-  height: 1000px;
-  position: absolute;
-  top: -200px;
-  left: 0;
-  filter: blur(0px);
-  z-index: -1;
-  opacity: .83;
-  object-fit: cover; }
-
-#img_logo_empresa {
-  width: 350px;
-  margin: auto;
-  animation-name: pulse1;
-  animation-timing-function: ease-in-out;
-  animation-duration: 4s;
-  animation-iteration-count: infinite; }
-
+  .section-1__container .section-1__container__text {
+    font-family: "Open Sans", sans-serif;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px; }
+    .section-1__container .section-1__container__text #img_logo_empresa {
+      width: 350px;
+      margin: auto;
+      animation-name: pulse1;
+      animation-timing-function: ease-in-out;
+      animation-duration: 4s;
+      animation-iteration-count: infinite; }
 @keyframes pulse1 {
   0% {
     opacity: 0.7;
@@ -324,6 +300,26 @@ body {
   100% {
     opacity: 0.7;
     transform: scale(0.9); } }
+  .section-1__container #main_text {
+    margin-top: 320px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 48px;
+    color: #141B30; }
+  .section-1__container #img_back {
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    top: -200px;
+    left: 0;
+    filter: blur(0px);
+    z-index: -1;
+    opacity: .83;
+    object-fit: cover; }
+
 /*****************************/
 /*SECTION 2 HOME*/
 .secction-2 {
@@ -342,33 +338,29 @@ body {
     color: #141B30; }
   .card:hover .img-card {
     transform: scale(1.2); }
-
-.card-img-top {
-  width: 100%;
-  height: 100px;
-  overflow: hidden; }
-
-.img-card {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: all 1s; }
-
-.card-img-top:nth-child(2) {
-  border-radius: 0px 0px 5px 5px; }
-
-.btn-my-card {
-  background: linear-gradient(#e4c497, #866c4a);
-  text-decoration: none;
-  padding: 5px 7px 5px 7px;
-  color: #fff;
-  border-radius: 5px;
-  font-family: "Open Sans", sans-serif;
-  transition: all .5s; }
-  .btn-my-card:hover {
-    color: #141B30;
-    font-weight: bold;
-    transform: scale(2); }
+  .card .card-img-top {
+    width: 100%;
+    height: 100px;
+    overflow: hidden; }
+  .card .img-card {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s; }
+  .card .card-img-top:nth-child(2) {
+    border-radius: 0px 0px 5px 5px; }
+  .card .btn-my-card {
+    background: linear-gradient(#e4c497, #866c4a);
+    text-decoration: none;
+    padding: 5px 7px 5px 7px;
+    color: #fff;
+    border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
+    transition: all .5s; }
+    .card .btn-my-card:hover {
+      color: #141B30;
+      font-weight: bold;
+      transform: scale(2); }
 
 /*****************************/
 /*SECTION 3 HOME*/
@@ -377,29 +369,27 @@ body {
   grid-template-columns: auto 350px;
   grid-template-rows: auto;
   background: linear-gradient(#c5ced5, #BCC3CE); }
-
-#detalles-home {
-  font-family: "Open Sans", sans-serif;
-  text-align: center;
-  border: 2px solid #fff;
-  color: #434343; }
-  #detalles-home h2 {
-    font-size: 42px;
-    padding: 10px; }
-  #detalles-home h3 {
-    font-size: 22px;
-    padding: 7px 25px; }
-  #detalles-home p {
-    font-size: 16px;
-    text-align: justify;
-    padding: 7px 25px; }
-
-#img-women {
-  background-position: right;
-  background-size: 500px;
-  border: 2px solid #fff;
-  background-image: url("../assetts/Imagenes/home-details.png");
-  background-repeat: no-repeat; }
+  .section-3 #detalles-home {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    border: 2px solid #fff;
+    color: #434343; }
+    .section-3 #detalles-home h2 {
+      font-size: 42px;
+      padding: 10px; }
+    .section-3 #detalles-home h3 {
+      font-size: 22px;
+      padding: 7px 25px; }
+    .section-3 #detalles-home p {
+      font-size: 16px;
+      text-align: justify;
+      padding: 7px 25px; }
+  .section-3 #img-women {
+    background-position: right;
+    background-size: 500px;
+    border: 2px solid #fff;
+    background-image: url("../assetts/Imagenes/home-details.png");
+    background-repeat: no-repeat; }
 
 /*****************************/
 /*SECTION 1 CONTACTO*/
@@ -415,36 +405,66 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain; }
+  .container__form .title_form {
+    width: 70%;
+    margin: auto; }
+    .container__form .title_form h1 {
+      text-align: center;
+      font-family: "Open Sans", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 48px;
+      color: #141B30; }
+    .container__form .title_form h2 {
+      text-align: center;
+      font-family: "Open Sans", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      color: #141B30; }
+  .container__form .form__container2 {
+    margin-top: 40px;
+    width: 100%; }
 
-.title_form {
-  width: 70%;
-  margin: auto; }
-  .title_form h1 {
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
-    color: #141B30; }
-  .title_form h2 {
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: #141B30; }
-
-.form__container2 {
-  margin-top: 40px;
-  width: 100%; }
-
-.fieldset_container {
-  font-family: "Open Sans", sans-serif;
-  font-weight: lighter;
-  font-size: 14px;
-  text-align: left; }
+/* el boton debe quedar afuera porque se comparte en otro html */
+.container__btn {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 300px; }
+  .container__btn .button {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    font-size: 10x;
+    background-color: rgba(247, 235, 223, 0.5);
+    border: 1px solid #555555;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: width .5s, border-radius .5s; }
+    .container__btn .button:hover {
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
+    .container__btn .button * {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: opacity .25s; }
+    .container__btn .button:focus {
+      width: 50px;
+      background-color: #44c08a;
+      border-radius: 50%; }
+    .container__btn .button:focus .text-btn {
+      opacity: 0; }
+    .container__btn .button:focus .icon {
+      opacity: 1;
+      font-size: 32px;
+      transition-delay: .5s; }
+    .container__btn .button .icon {
+      opacity: 0; }
 
 .col-sm-12 > div {
   width: 100%;
@@ -483,60 +503,18 @@ textarea {
   display: flex;
   justify-content: space-evenly;
   align-items: center; }
-
-#checkbox {
-  width: 20px;
-  min-width: 20px;
-  height: 20px;
-  display: inline-block; }
-
-#img_check_container {
-  display: inline-block;
-  width: 70px;
-  margin-top: 10px;
-  height: 80px; }
-
-#img_check {
-  width: 100%; }
-
-.container__btn {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  height: 300px; }
-
-.button {
-  position: absolute;
-  width: 150px;
-  height: 50px;
-  font-size: 10x;
-  background-color: rgba(247, 235, 223, 0.5);
-  border: 1px solid #555555;
-  color: black;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: width .5s, border-radius .5s; }
-  .button:hover {
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
-  .button * {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: opacity .25s; }
-  .button:focus {
-    width: 50px;
-    background-color: #44c08a;
-    border-radius: 50%; }
-  .button:focus .text-btn {
-    opacity: 0; }
-  .button:focus .icon {
-    opacity: 1;
-    font-size: 32px;
-    transition-delay: .5s; }
-
-.icon {
-  opacity: 0; }
+  .check_container #checkbox {
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    display: inline-block; }
+  .check_container #img_check_container {
+    display: inline-block;
+    width: 70px;
+    margin-top: 10px;
+    height: 80px; }
+    .check_container #img_check_container #img_check {
+      width: 100%; }
 
 /*****************************/
 /*SECTION 1 NOSOTROS*/
@@ -578,22 +556,19 @@ textarea {
     text-align: center;
     line-height: 2rem;
     padding: 0 4rem 0 4rem; }
+    .text-container-nosotros h3 span {
+      font-weight: bold; }
   .text-container-nosotros p {
     line-height: 1.5rem;
     font-size: 18px;
     padding: 0 4rem 0 4rem; }
-
-.text-container-nosotros h3 span {
-  font-weight: bold; }
-
-.list-text {
-  font-size: 18px;
-  margin: 1rem 4rem 0 4rem;
-  list-style: circle;
-  line-height: 1.5rem; }
-
-#ul-list-text {
-  margin-bottom: 50px; }
+  .text-container-nosotros #ul-list-text {
+    margin-bottom: 50px; }
+    .text-container-nosotros #ul-list-text .list-text {
+      font-size: 18px;
+      margin: 1rem 4rem 0 4rem;
+      list-style: circle;
+      line-height: 1.5rem; }
 
 /*****************************/
 /*SECTION 1 RRHH-ENVIO DE CV*/
@@ -610,58 +585,52 @@ textarea {
   width: 100%;
   margin-top: -161px;
   margin-bottom: 1px; }
-
-.rrhh-container__text {
-  font-family: "Open Sans", sans-serif; }
-  .rrhh-container__text h1 {
-    padding-top: 20px;
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #141B30;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
-    text-align: center;
-    letter-spacing: 0.2em; }
-  .rrhh-container__text p {
-    margin-left: 50%;
-    text-align: left;
-    font-family: "Open Sans", sans-serif;
-    font-size: 20px;
-    line-height: 27px;
-    color: #333333;
-    margin-top: 50px;
-    margin-bottom: 50px; }
-
-.rrhh-container__text
-.form__container {
-  width: 100%;
-  margin: auto; }
-
-.form__container form fieldset {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: flex-start;
-  text-align: left;
-  margin-top: 30px;
-  margin-left: 50%;
-  font-family: "Open Sans", sans-serif; }
-
-.form__container form label {
-  padding: 4px; }
-
-.form__container form input {
-  margin: 0 0 25px 0;
-  background-color: rgba(255, 255, 255, 0);
-  outline: none;
-  border: none;
-  border-bottom: 2px solid #becde0;
-  width: 70%;
-  padding: 7px 7px 2px 7px;
-  font-family: "Open Sans", sans-serif; }
+  .rrhh-container .rrhh-container__text {
+    font-family: "Open Sans", sans-serif; }
+    .rrhh-container .rrhh-container__text h1 {
+      padding-top: 20px;
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #141B30;
+      font-family: "Open Sans", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 48px;
+      text-align: center;
+      letter-spacing: 0.2em; }
+    .rrhh-container .rrhh-container__text p {
+      margin-left: 50%;
+      text-align: left;
+      font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+      line-height: 27px;
+      color: #333333;
+      margin-top: 50px;
+      margin-bottom: 50px; }
+  .rrhh-container .form__container {
+    width: 100%;
+    margin: auto; }
+    .rrhh-container .form__container form fieldset {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: flex-start;
+      text-align: left;
+      margin-top: 30px;
+      margin-left: 50%;
+      font-family: "Open Sans", sans-serif; }
+    .rrhh-container .form__container form label {
+      padding: 4px; }
+    .rrhh-container .form__container form input {
+      margin: 0 0 25px 0;
+      background-color: rgba(255, 255, 255, 0);
+      outline: none;
+      border: none;
+      border-bottom: 2px solid #becde0;
+      width: 70%;
+      padding: 7px 7px 2px 7px;
+      font-family: "Open Sans", sans-serif; }
 
 .area_cv {
   margin: 10px 0 20px 0; }
@@ -721,26 +690,25 @@ textarea {
     object-position: left;
     width: 100%;
     height: 100%; }
-
-.img-service__title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: 50;
-  background: rgba(190, 205, 224, 0.64);
-  font-family: "Open Sans", sans-serif;
-  height: 70px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 30px;
-  text-align: center;
-  letter-spacing: 0.2em;
-  color: #FFFFFF; }
+  .img-service .img-service__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 50;
+    background: rgba(190, 205, 224, 0.64);
+    font-family: "Open Sans", sans-serif;
+    height: 70px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #FFFFFF; }
 
 .info_hidden {
   display: flex;
@@ -748,121 +716,110 @@ textarea {
   width: 100%;
   align-items: center;
   justify-content: center; }
-
-.info_service {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 32px;
-  text-align: center;
-  color: #333;
-  padding: 12px;
-  background-color: rgba(243, 224, 203, 0.5); }
-
-.btn_service {
-  width: 150px;
-  height: 50px;
-  border: none;
-  color: black;
-  border-radius: 6px;
-  cursor: pointer;
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  padding: 0;
-  margin-top: 20px;
-  font-size: 20px;
-  background-color: rgba(243, 224, 203, 0.5); }
-  .btn_service:hover {
-    color: #141B30;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
+  .info_hidden .info_service {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color: #333;
+    padding: 12px;
+    background-color: rgba(243, 224, 203, 0.5); }
+  .info_hidden .btn_service {
+    width: 150px;
+    height: 50px;
+    border: none;
+    color: black;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: rgba(243, 224, 203, 0.5); }
+    .info_hidden .btn_service:hover {
+      color: #141B30;
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
 
 .aditional {
   flex-direction: column; }
-
-#title_adition {
-  font-family: "Open Sans", sans-serif;
-  width: 100%;
-  padding: 15px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 25px;
-  text-align: center;
-  color: #141B30;
-  background-color: rgba(243, 224, 203, 0.5); }
-
-.adition_info_box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-  padding: 20px;
-  margin: 10px; }
-
-.aditional_info {
-  padding: 10px;
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #444;
-  transition: all .7s; }
-  .aditional_info:hover {
-    color: #000000;
-    font-size: 20px; }
-
-.star {
-  width: 25px; }
+  .aditional #title_adition {
+    font-family: "Open Sans", sans-serif;
+    width: 100%;
+    padding: 15px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #141B30;
+    background-color: rgba(243, 224, 203, 0.5); }
+  .aditional .adition_info_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 20px;
+    margin: 10px; }
+    .aditional .adition_info_box .star {
+      width: 25px; }
+    .aditional .adition_info_box .aditional_info {
+      padding: 10px;
+      font-family: "Open Sans", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #444;
+      transition: all .7s; }
+      .aditional .adition_info_box .aditional_info:hover {
+        color: #000000;
+        font-size: 20px; }
 
 .client {
   flex-direction: column;
   width: 100%; }
-
-#title_clients {
-  font-family: "Open Sans", sans-serif;
-  width: 100%;
-  padding: 12px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 25px;
-  text-align: center;
-  color: #141B30;
-  background-color: rgba(243, 224, 203, 0.5); }
-
-.img_clientes_box {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: auto;
-  align-items: center; }
-
-.img_clientes {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  max-height: 130px;
-  margin-top: 10px; }
-  .img_clientes img {
-    width: 130px; }
+  .client #title_clients {
+    font-family: "Open Sans", sans-serif;
+    width: 100%;
+    padding: 12px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #141B30;
+    background-color: rgba(243, 224, 203, 0.5); }
+  .client .img_clientes_box {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    align-items: center; }
+    .client .img_clientes_box .img_clientes {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      max-height: 130px;
+      margin-top: 10px; }
+      .client .img_clientes_box .img_clientes img {
+        width: 130px; }
 
 /*****************************/
 /****NATURALEZA*****/
 .naturaleza_box {
   min-height: 100vh; }
-
-#img_colum1 {
-  background-image: url("../assetts/Imagenes/naturaleza2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  animation-name: dezplazar1;
-  animation-timing-function: ease-in-out;
-  animation-duration: 3s; }
-
+  .naturaleza_box #img_colum1 {
+    background-image: url("../assetts/Imagenes/naturaleza2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    animation-name: dezplazar1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s; }
 @keyframes dezplazar1 {
   0% {
     background-position: right;
@@ -872,74 +829,69 @@ textarea {
     background-position: center;
     webkit-filter: grayscale(100%);
     filter: grayscale(100%); } }
-#img_colum2 {
-  background-image: url("../assetts/Imagenes/naturaleza1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  animation-name: dezplazar2;
-  animation-timing-function: ease-in-out;
-  animation-duration: 3s; }
-
+  .naturaleza_box #img_colum2 {
+    background-image: url("../assetts/Imagenes/naturaleza1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation-name: dezplazar2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s; }
 @keyframes dezplazar2 {
   0% {
     background-position: left; }
   100% {
     background-position: center; } }
-.naturaleza_colum {
-  background-position: center; }
-  .naturaleza_colum h1 {
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 39px;
-    text-align: center;
-    letter-spacing: 0.2em;
-    color: #222E50;
-    padding: 10px 2px 15px 2px; }
-  .naturaleza_colum h3 {
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
-    color: #000000;
-    padding: 10px 2px 15px 2px; }
-
-.box_info h2 {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 36px;
-  text-align: left;
-  color: rgba(53, 87, 53, 0.97);
-  background: rgba(178, 162, 147, 0.21);
-  padding: 5px 2px 7px 2px;
-  margin: 5px 2px 7px 2px;
-  cursor: pointer; }
-.box_info .parrafo_natu {
-  color: #000000; }
-.box_info:hover .parrafo_natu {
-  display: block; }
-
-.box_info
-.parrafo_natu {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 25px;
-  color: #000000;
-  text-align: left;
-  padding: 0 10px 0 10px;
-  display: none;
-  transition: all 4s; }
-  .box_info
-  .parrafo_natu:hover {
-    color: rgba(53, 87, 53, 0.97); }
+  .naturaleza_box .naturaleza_colum {
+    background-position: center; }
+    .naturaleza_box .naturaleza_colum h1 {
+      font-family: "Open Sans", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 39px;
+      text-align: center;
+      letter-spacing: 0.2em;
+      color: #222E50;
+      padding: 10px 2px 15px 2px; }
+    .naturaleza_box .naturaleza_colum h3 {
+      font-family: "Open Sans", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+      color: #000000;
+      padding: 10px 2px 15px 2px; }
+    .naturaleza_box .naturaleza_colum .box_info h2 {
+      font-family: "Open Sans", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 36px;
+      text-align: left;
+      color: rgba(53, 87, 53, 0.97);
+      background: rgba(178, 162, 147, 0.21);
+      padding: 5px 2px 7px 2px;
+      margin: 5px 2px 7px 2px;
+      cursor: pointer; }
+    .naturaleza_box .naturaleza_colum .box_info .parrafo_natu {
+      color: #000000; }
+    .naturaleza_box .naturaleza_colum .box_info:hover .parrafo_natu {
+      display: block; }
+    .naturaleza_box .naturaleza_colum .box_info .parrafo_natu {
+      font-family: "Open Sans", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 25px;
+      color: #000000;
+      text-align: left;
+      padding: 0 10px 0 10px;
+      display: none;
+      transition: all 4s; }
+      .naturaleza_box .naturaleza_colum .box_info .parrafo_natu:hover {
+        color: rgba(53, 87, 53, 0.97); }
 
 /*****************************/
 /****USOS COMUNES*****/
