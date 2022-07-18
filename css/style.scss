@@ -587,7 +587,7 @@ textarea {
 
 .button_rrhh{
     margin-top: 20px;
-    margin-bottom: 100px;
+    
 }
 
 /*****************************/
@@ -938,12 +938,17 @@ textarea {
         
     }
     /*****HEADER*******/
+.header{
+    height: 100px;
+}
+
     .header__container{
         justify-content: space-between;
     }
 
     #logo-header {
         margin-top: 15px;
+        width: 50px;
     }
 
     .my_nav {        
@@ -967,16 +972,29 @@ textarea {
                 width: 50%;
                 
             }    
-        }   
+        } 
+        #main_text {
+            font-size: 26px;
+        }  
     }        
     
-
-    #main_text {
-        font-size: 28px;
+    .section-3 {
+        #detalles-home{
+            h2{
+                font-size: 26px;
+            }
+            h3{
+                font-size: 20px;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
     }
 
+
     .section-1__container h3 {
-        font-size: 24px;
+        font-size: 18px;
     }
     
     
@@ -996,48 +1014,60 @@ textarea {
         h1 {
             margin-top: 180px;
             padding: 10px 0 10px 0;
-            font-size: 32px;
+            font-size: 26px;
         }
         h2 {
-            padding-top: 10px;
-            padding-bottom: 10px;
+            padding: 10px 27px 10px 27px;
             margin-top: 20px;
-            font-size: 18px;
+            font-size: 20px;
             width: 100%;        
             
         }
         h3 {
             margin-top: 20px;
-            font-size: 16px;
+            font-size: 18px;
+            padding: 0 20px 0 20px;
         }
         p {
             font-size: 16px;
+            padding: 0 20px 0 20px;
+        }
+        #ul-list-text {
+        
+            .list-text {
+                font-size: 16px;
+                margin: 15px;
+                
+            }
         }
 
     }
    
 
-    .text-container-nosotros ul li {
-        font-size: 16px;
-    }
+    
 
     /*****************/    
 
     /*****CONTACTO*******/
 
-    .title_form {
-        width: 100%;
-        h1 {
-            font-size: 30px;
-            line-height: 30px;
-            padding-bottom: 15px;
+    .container__form {
+        background-size: cover;
+        .title_form {
+            width: 100%;
+            h1 {
+                font-size: 28px;
+                line-height: 30px;
+                padding-bottom: 15px;
+            }
         }
     }
+    
 
     .container__btn {
         height: 70px;
     }
 
+    
     
 
 
@@ -1048,47 +1078,92 @@ textarea {
     }
 
     #title-services {
-        font-size: 22px;
+        font-size: 26px;
     }
 
     #subtitle-service {
-        font-size: 16px;
-    }
-
-    .grid_item_ns {
-        flex-wrap: wrap;
-    }
-
-    .adition_info_box { 
-        flex-wrap: wrap;
-    }
-
-    .img_clientes {
-        margin-top: 12px;
-        width: 70px;
-        img {
-            width: 100%;
-        }
-        
+        font-size: 18px;
     }
 
     .info_hidden {
         margin-bottom: 32px;
+        .info_service {
+            line-height: 24px;
+            font-size: 16px;
+        }
+    }
+    
+
+    .grid_item_ns {
+        flex-wrap: wrap;
+        .adition_info_box { 
+            flex-wrap: wrap;
+        }
     }
 
-
-    .info_service {
-        font-size: 14px;
+    .client {
+        .img_clientes_box {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            grid-column: 2 / 5;            
+            .img_clientes {
+                
+                margin-top: 12px;
+                
+                img {
+                    width: 100%;
+                }
+                
+            }
+        }
     }
+   
+    
+
+   
+
+
+    
 
      /*****************/
 
      /****RRHH personal*****/
 
-     .rrhh-container{        
-        background-position: -400px 70px;
-      
+     .rrhh-container{  
+        background-position: -350px 95px;      
+        background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../assetts/Imagenes/rrhh_img.jpg");
         
+        
+        .rrhh-container__text {
+            h1 {
+                font-size: 28px;
+            }
+            p{
+                margin: 10px;
+                font-size: 18px;
+                color: #000000;
+                text-align: center;
+            }
+        }
+    
+    .form__container {
+        form {
+            fieldset {
+                background-color: rgba(247, 235, 223, 0.5);
+                padding: 25px 5px 5px 5px;
+                margin: 15px;
+                border-radius: 7px;
+                input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+      
+    .container__btn {
+        margin-bottom: 20px;
+    }
         
     }
     /*****************/
