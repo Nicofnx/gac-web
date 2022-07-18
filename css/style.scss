@@ -11,6 +11,10 @@ $text-color-red: #f00;
 $border-solid-gray: 1px solid #555555;
 $primary-font: 'Open Sans', sans-serif;
 
+
+
+
+
 body{
     font-family: $primary-font
     /*background: rgba(247, 235, 223, 0.5);*/
@@ -26,7 +30,9 @@ body{
     
 }
 
-
+.row { 
+    --bs-gutter-x: 0px
+}
 
 /******************************/
 
@@ -951,9 +957,19 @@ textarea {
     /**************/
     
     /*****HOME*******/
-    #img_logo_empresa {
-        width: 50%;
-    }
+    
+
+    .section-1__container{
+        
+        .section-1__container__text{
+            
+            #img_logo_empresa{
+                width: 50%;
+                
+            }    
+        }   
+    }        
+    
 
     #main_text {
         font-size: 28px;
