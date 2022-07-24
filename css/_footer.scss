@@ -5,13 +5,15 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(179, 155, 135, 0.21) 95.52%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(113, 162, 248, 0.3) 95.52%);
     width: 100%;
     
     
     
     
 }
+
+
 
 .footer__text{
     display: flex;
@@ -21,6 +23,31 @@
     font-size: .8rem;
     padding: 7px;
     font-family: 'Open Sans', sans-serif;
+    .footer__text--phone {
+        a {
+            list-style: none;
+            text-decoration: none;
+            span {
+                color: #000;
+
+                &:hover {
+                    color: #f00;
+                }
+            }
+        }
+    }
+    .footer_mail {        
+        list-style: none;
+        text-decoration: none;
+        span {
+            color: #000;
+
+            &:hover {
+                color: #f00;
+            }
+        }
+        
+    }
 }
 
 .logo{
