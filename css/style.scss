@@ -278,8 +278,10 @@ body{
     .title_form {
     
         width: 70%;
-        margin: auto;    
+        margin: auto;
+           
         h1 {
+            padding-top: 25px;
             text-align: center;
             font-family: $primary-font;
             font-style: normal;
@@ -364,10 +366,10 @@ body{
 
 
 .col-sm-12 > div {
-    width: 100%;    
+    width: 70%;    
     margin: 30px auto;
     text-align: left;
-    max-width: 350px;
+    
     
 }
 
@@ -1077,6 +1079,9 @@ textarea {
         }
     }
     
+    .col-sm-12 > div {
+        width: 95%;
+    }
 
     .container__btn {
         height: 70px;

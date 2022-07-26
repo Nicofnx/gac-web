@@ -456,6 +456,7 @@ body {
     width: 70%;
     margin: auto; }
     .container__form .title_form h1 {
+      padding-top: 25px;
       text-align: center;
       font-family: "Open Sans", sans-serif;
       font-style: normal;
@@ -516,10 +517,9 @@ body {
       opacity: 0; }
 
 .col-sm-12 > div {
-  width: 100%;
+  width: 70%;
   margin: 30px auto;
-  text-align: left;
-  max-width: 350px; }
+  text-align: left; }
 
 .col-sm-12 div input {
   width: 100%;
@@ -1024,6 +1024,9 @@ textarea {
         font-size: 28px;
         line-height: 30px;
         padding-bottom: 15px; }
+
+  .col-sm-12 > div {
+    width: 95%; }
 
   .container__btn, .container__btn__rrhh {
     height: 70px; }
