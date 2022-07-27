@@ -13,7 +13,7 @@ $primary-font: 'Open Sans', sans-serif;
 /*************/
 /* MAP */
 
-$colorText: (cblue: #141B30, cred: #f00);
+$colorText: (cblue: #12151c, cred: #f00);
 
 /*************/
 /* Mixins */
@@ -56,7 +56,8 @@ body{
     position: relative;
     padding-top: 70px;
     h3{
-        text-align: center;                                      
+        text-align: center; 
+        padding-bottom: 25px;                                     
     }
     .section-1__container__text{
         font-family: $primary-font;
@@ -104,7 +105,7 @@ body{
         font-size: 34px;
         line-height: 48px;
         color: map-get($colorText, cblue);
-        padding: 0 20px 0 20px;
+        padding: 25px 20px 0 20px;
         
     }
     #img_back{
@@ -119,7 +120,10 @@ body{
         object-fit:cover;
     }
     
-    
+    .bkg-text {
+        background: rgba(158,144,132, 0.15);
+        backdrop-filter: blur(8px);
+    }
     
 }
 
@@ -132,7 +136,7 @@ body{
 /*SECTION 2 HOME*/
 .secction-2{
     width: 100%;
-    margin-top: 45px;  
+    margin-top: 10px;  
     margin-bottom: 100px; 
     
     
@@ -177,6 +181,7 @@ body{
         .card-text {
             span {
                 .check_span {
+                    color: #866c4a ;
                     width: 20px;
                 }
             }
@@ -226,23 +231,40 @@ body{
         }
         p{
             font-size: 16px;
-            text-align: justify;
+            text-align: center;
             padding: 7px 25px;
         }
         
         
+        
     }
-    #img-women {
-        background-position: right;
-        background-size: 500px;
-        border: 2px solid #fff;
-        background-image: url("../assetts/Imagenes/home-details.jpg");
-        background-repeat: no-repeat;
-    }
+
+    
+    
     
 
     
 }
+.bkg-imgwoman {
+    background: linear-gradient(#D3D3D3, #D2D2D2);
+    width: 100%;
+    height: 100%;
+    
+    #img-women {
+        width: 100%;
+        height: 100%;
+        background-position: right;
+        background-size: 500px;
+        border: 2px solid #fff;
+        background-image: url("../assetts/Imagenes/home-details.jpg");
+        filter: grayscale(1);
+        background-repeat: no-repeat;
+        
+    }
+    
+}
+
+
 
 
 
@@ -951,7 +973,7 @@ textarea {
     
     .container-web{        
         width: 100%;
-        grid-template-rows: 121px auto 300px;        
+        grid-template-rows: auto auto 300px;        
         
     }
     /*****HEADER*******/
@@ -1152,9 +1174,13 @@ textarea {
      /*****************/
 
      /****RRHH personal*****/
+    
+     .rrhh-container{
 
-     .rrhh-container{  
-        background-position: -350px 95px;      
+        background-position: center 75px;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../assetts/Imagenes/rrhh_img.jpg);
+        background-repeat: no-repeat;
+	    background-size:cover;      
         
         
         .rrhh-container__text {
@@ -1172,7 +1198,7 @@ textarea {
     .form__container {
         form {
             fieldset {
-                background-color: rgba(247, 235, 223, 0.5);
+                
                 padding: 25px 5px 5px 5px;
                 margin: 15px;
                 border-radius: 7px;
