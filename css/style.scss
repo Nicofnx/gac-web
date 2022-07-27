@@ -293,7 +293,7 @@ body{
 
 .container__form {
     width: 100%;
-    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../assetts/Imagenes/logo-empresa.png");
+    background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("../assetts/logos/bitmap.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -336,7 +336,7 @@ body{
     display: flex;
     @include displayFlex(flex, center, start); 
     justify-content: center;
-    height: 300px;
+    height: 150px;
     .button {
         position: absolute;    
         width: 150px;
@@ -638,6 +638,7 @@ textarea {
 
 
 #title-services {
+    margin-top: 2rem;
     font-family: $primary-font;
     font-style: normal;
     font-weight: 700;
@@ -655,17 +656,21 @@ textarea {
     line-height: 30px;
     text-align: center;
     color: #333333;
-    padding-top: 15px;
+    padding: 1.5rem 1.5rem;
 }
 
 .box_service { 
     align-items: center;
+    background: rgb(246,219,190);
+    background: linear-gradient(90deg, rgba(246,219,190,1) 0%, rgba(249,227,202,0.25) 100%);
 }
 
 .end {
     
     justify-self: end;    
     flex-direction: row-reverse;
+    background: rgb(246,219,190);
+    background: linear-gradient(270deg, rgba(246,219,190,1) 0%, rgba(249,227,202,0.25) 100%);
     
 }
 
@@ -711,6 +716,7 @@ textarea {
     width: 100%;    
     
     .info_service {
+        
         font-family: $primary-font;
         font-style: normal;    
         font-size: 18px;
@@ -718,28 +724,11 @@ textarea {
         text-align: center;
         color: #333;
         padding: 12px;
-        background-color: rgba(243, 224, 203, 0.5);
+        margin: 0;
+        
         
     }
-    .btn_service { 
-        width: 150px;
-        height: 50px;    
-        border: none;   
-        color: black;    
-        border-radius: 6px;
-        cursor: pointer;
-        font-family: $primary-font;
-        font-style: normal;
-        padding: 0;
-        margin-top: 20px;
-        font-size: 20px;    
-        background-color: rgba(243, 224, 203, 0.5);
     
-        &:hover {
-            color: map-get($colorText, cblue);;
-            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-        }
-    }
     
 }
 
@@ -748,6 +737,7 @@ textarea {
     #title_adition {
         font-family: $primary-font;
         width: 100%;
+        margin-top: 2.5rem;
         padding: 15px;
         font-style: normal;
         font-weight: 600;
@@ -786,6 +776,26 @@ textarea {
             }
         }
     
+    }
+}
+
+.btn_service { 
+    width: 150px;
+    height: 50px;    
+    border: none;   
+    color: black;    
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: $primary-font;
+    font-style: normal;
+    padding: 0;
+    margin-bottom: 3rem;
+    font-size: 20px;    
+    background-color: rgba(243, 224, 203, 0.5);
+
+    &:hover {
+        color: map-get($colorText, cblue);;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     }
 }
 
@@ -1114,6 +1124,12 @@ textarea {
 
 
     /****NNUESTROS SERVICIOS*****/
+
+    .box_service {
+        background: rgb(246,219,190);
+        background: linear-gradient(180deg, rgba(246,219,190,1) 0%, rgba(249,227,202,0.25) 100%);
+    
+    }
 
     .img-service {
         width: 100%;
